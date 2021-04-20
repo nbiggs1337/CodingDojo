@@ -1,0 +1,23 @@
+* {
+    margin: 10px 0 0 20px;
+}
+button {
+    margin: 15px 0 0 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+    color: rgb(58, 114, 2);
+    background-color: whitesmoke;
+    outline-color: lawngreen 5px;
+}
+.icon {
+    height: 50px;
+}
+#createacc {
+    width: 200px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: steelblue;
+    outline-color: 2px black
+    box-shadow: 10px 5px 5px black;
+}
