@@ -1,0 +1,26 @@
+h1 {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    padding: 10px;
+}
+span {
+    color: turquoise;
+}
+
+h2 {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 8px;
+}
+
+h3 {
+    color: indigo;
+    background-color: cornflowerblue;
+    text-align: right;
+    font-family:sans-serif ;
+    text-decoration: underline;
+    padding: 8px;
+}
