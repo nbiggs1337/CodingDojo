@@ -1,0 +1,50 @@
+.container {
+    background-color: gray;
+    height: 1000px;
+    width: 900px;
+    margin: 0px 5px 5px 5px;
+}
+img {
+    width: 200px;
+    margin: 20px;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+.bar1 {
+    height: 250px;
+    width: 800px;
+    background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px 28px 28px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bar2 {
+    height: 250px;
+    width: 800px;
+    background-color:thistle;
+    padding: 10px;
+    margin: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bar3 {
+    height: 250px;
+    width: 800px;
+    background-color:whitesmoke;
+    padding: 10px;
+    margin: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h3 {
+    text-align: center;
+    text-shadow: 4px black ;
+}
