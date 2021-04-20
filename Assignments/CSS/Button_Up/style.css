@@ -18,6 +18,6 @@ button {
     height: 50px;
     color: whitesmoke;
     background-color: steelblue;
-    outline-color: 2px black
+    outline-color: 2px black;
     box-shadow: 10px 5px 5px black;
 }
