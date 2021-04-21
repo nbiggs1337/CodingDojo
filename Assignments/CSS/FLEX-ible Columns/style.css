@@ -1,0 +1,32 @@
+
+.row {
+    height: 100px;
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    background-color:cornflowerblue;
+    margin: 15px;
+    padding: 25px;
+    text-align:start;
+    font-size: larger;
+}
+
+.col2 {
+    flex: 2;
+    background-color:cornflowerblue;
+    margin: 15px;
+    padding: 25px;
+    text-align:start;
+    font-size: larger;
+}
+
+.col3 {
+    flex: 3;
+    background-color:cornflowerblue;
+    margin: 15px;
+    padding: 25px;
+    text-align:start;
+    font-size: larger;
+}
