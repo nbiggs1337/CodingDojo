@@ -1,0 +1,51 @@
+* {
+    font-family: 'Antonio', sans-serif;
+    color:ghostwhite;
+}
+
+body {
+    background-color: black;
+    padding: 20px;
+}
+.navbar {
+    height: 100px;
+    background-color: rgb(172, 113, 25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navleft{
+    width: 400px;
+    height: 80px;
+
+}
+.navright {
+    width: 400px;
+    height: 80px;
+}
+
+.genre {
+    background-color: burlywood;
+    margin: 0px;
+    padding: 10px;
+}
+
+.library {
+    height: 500px;
+    background-color: rgb(182, 110, 3);
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.show {
+    margin: 3px;
+}
+.show img {
+    width: 240px;
+    height: 135px;
+    object-fit: cover;
+}
+.show h3 {
+    margin: 5px 0px; 
+}
