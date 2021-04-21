@@ -1,0 +1,80 @@
+* {font-family: 'Roboto', sans-serif;}
+
+.icon {
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 350px;
+    top: 140px;
+}
+
+.top {
+    background-color:rgb(5, 100, 189);
+    height: 110px;
+    width: 756px;
+    position: absolute;
+    left: 250px;
+    top: 110px
+
+}
+
+.container {
+    background-color:whitesmoke;
+    height: 300px;
+    width: 700px;
+    position: absolute;
+    left: 253px;
+    top: 210px;
+    padding: 25px;
+    outline: 3px solid darkgrey;
+}
+
+.name {
+    position: absolute;
+    left: 350px;
+    top: 285px;
+}
+
+.location img{
+    width: 15px;
+    position: fixed;
+    left: 350px;
+    top: 348px;
+}
+
+.location h3 {
+    position: absolute;
+    left: 375px;
+    top: 330px;
+}
+
+.info {
+    top: 370px;
+}
+
+.info2 {
+    top: 400px;
+}
+
+.info, .info2 {
+    position: absolute;
+    left: 350px;
+}
+
+.edit {
+    display: flex;
+    position: absolute;
+    left: 355px;
+    top: 445px;
+}
+
+h4 {
+    margin-top: 10px;
+    color: rgb(5, 100, 189) ;
+}
+
+.edit img {
+    height: 20px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
