@@ -1,0 +1,51 @@
+* {
+    font-family: 'Antonio', sans-serif;
+    color: white;
+}
+.container {
+    width: 1080px;
+    margin: auto;
+
+}
+.top {
+    background-color: aqua;
+    height: 360px;
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.navleft{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.navleft ul {
+    list-style-type: none;
+    display: flex;
+}
+.navleft ul li {
+    margin-right: 25px;
+}
+.navleft ul li img {
+    width: 120px;
+    margin-right: 25px;
+}
+.navright {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+.navright p {
+    margin-left: 40px;
+}
+
+.bottom {
+    height: 260px;
+    background-color: aqua;
+}

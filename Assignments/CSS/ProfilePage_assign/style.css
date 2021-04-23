@@ -1,0 +1,316 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    background-color: black;
+    height: 50px;
+    width: auto;
+    padding: 10px 150px;
+    display: inline-flex;
+    margin-top: 0px;
+}
+
+.navleft {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 650px;
+    margin-left: 40px;
+
+}
+
+.navleft h1, .navleft h4 {
+    color: rgb(236, 236, 236);
+    align-items: center;
+}
+.signout {
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    margin-left: 140px;
+    padding-top: 5px;
+}
+
+.signout button {
+    height: 40px;
+    width: 100px;
+    margin-left: 100px;
+    box-shadow: 5px black;
+    text-align: center;
+    color: rgb(236, 236, 236);
+    background-color:rgb(3, 116, 209);
+    border-radius: 5%;
+}
+
+
+.maincont { 
+    background-color: rgb(255, 255, 255);
+    height: 1500px;
+    width: auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 10px 170px;
+}
+
+.userinfo{
+    background-color: whitesmoke;
+    height: 350px;
+    width: 600px;
+    margin: 10px 20px;
+    padding-bottom: 0px;
+    display: inline-block;
+    outline: 2px black solid;
+}
+.userinfo img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    position: relative;
+    left: 70px;
+    top: 30px;
+}
+
+.userinfotop{
+    background-color: rgb(3, 116, 209);
+    height: 85px;
+    width: 600px;
+    margin-top: -130px;
+}
+
+.userinfoname {
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+.userinfolocation {
+    display: flex;
+    justify-content:flex-start;
+}
+.userinfolocation img {
+    height: 15px;
+    width: 15px;
+    margin-left: 12px;
+    margin-top: -46px;
+}
+.userinfolocation h3 {
+    margin-top: -19px;
+    margin-left: 75px;
+}
+.userinfoinfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+.userinfoinfo {
+    margin-left: 70px;
+}
+.infoinfo {
+    margin-top: -8px;
+    margin-left: 9px;
+}
+.userinfoinfo img {
+    height: 25px;
+    width: 25px;
+    margin-left: -280px;
+}
+.edit {
+    margin-left: 74px;
+    margin-top: 33px;
+    text-decoration: underline;
+    color: rgb(3, 116, 209);
+}
+
+
+
+.conreq {
+    background-color: whitesmoke;
+    height: 250px;
+    width: 350px;
+    margin: 10px 20px;
+    outline: 2px solid black;
+}
+
+.conreqtop {
+    background-color: darkgrey;
+    height: 60px;
+    width: 350px;
+    display: flex;
+}
+
+.conreqtop h2 {
+    padding-left: 45px;
+    align-self: center;
+}
+.conreqtop .two {
+    position: relative;
+    left: 15px;
+}
+
+.twoback {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(129, 129, 129);
+    border-radius: 50%;
+    position: relative;
+    top: 10px ;
+    left: 40px;
+}
+
+.conreqreqs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.avi3 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 25px;
+    margin-top: -5px
+}
+
+.conreqreqs h2 {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+}
+
+.reqresponse2 {
+    height: 45px;
+    width: 45px;
+    padding-top: 0px;
+    padding-left: 35px;
+}
+
+.reqresponse {
+    height: 45px;
+    width: 45px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+
+.useredu {
+    background-color: whitesmoke;
+    height: 350px;
+    width: 600px;
+    margin: 10px 20px;
+    border: 2px solid black;
+}
+
+.useredutop {
+    background-color: darkgrey;
+    height: 50px;
+    width: 600px;
+    display: flex;
+    
+}
+.useredutop h2 {
+    align-self: center;
+    padding-left: 70px;
+}
+
+.usereduinfo {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 55px;
+}
+
+.usereduinfo h2, .usereduinfo h3, .usereduinfo h4 {
+    margin: 8px 10px;
+}
+.dojo {
+    margin-top: 15px !important;
+}
+
+
+
+
+
+
+.yourcon {
+    background-color: whitesmoke;
+    height: 450px;
+    width: 350px;
+    margin: -90px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 2px solid black;
+}
+
+.yourcontop {
+    background-color: darkgrey;
+    height: 60px;
+    width: 350px;
+    display: flex;
+    align-content: center;
+}
+.yourcontop h3 {
+    z-index: 8;
+    margin-left: 40px;
+}
+.yourcontop h2 {
+    margin-top: 17px;
+    margin-left: -30px;
+    
+}
+
+.back500 {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(129, 129, 129);
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+.yourconcon { 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.yourconcon img {
+    margin-top: 20px;
+}
+
+.yourconcon h2{
+    padding-left: 20px; 
+    padding-top: 25px;
+    margin: 10px 70px 0px 0px;
+}
+
+.shortname {
+    margin-right: 100px !important;
+}
+
+.avi {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+#last {
+    margin-bottom: 32px;
+}
+.yourconmore {
+    width: 352px;
+    height: 42px;
+    background-color: whitesmoke;
+    border-top: 2px solid black;
+}
+.yourconmore h3 {
+    margin-top: 10px;
+    padding-left: 35px;
+    text-decoration: underline;
+    color: rgb(3, 116, 209);
+}
