@@ -16,9 +16,8 @@ function evensOfOdds(arr) {
     if (totalEvens>totalOdds) {
             return ("Evens are larger");
     }
-    else (console.log("Both are tied"));
-            console.log(totalEvens,totalOdds)
-            return ("Both are tied")
+    else return ("Both are tied")
+        console.log(totalEvens,totalOdds);
     
 }
 
