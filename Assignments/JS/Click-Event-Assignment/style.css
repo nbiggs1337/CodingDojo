@@ -1,0 +1,25 @@
+* {
+    background-color: darkgrey;
+}
+
+h1 {
+    text-align: center;
+    text-decoration-line: overline;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+}
+
+button{
+    padding: 20px 30px;
+    margin: 10px;
+    background-color: white;
+}
+
+h2 {
+    text-decoration: underline;
+}
