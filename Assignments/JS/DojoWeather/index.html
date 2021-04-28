@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>DojoWeather</h1>
+        </div>
+        <div class="locations">
+            <h2 onclick="alert('Loading weather report...')">Burbank</h2>
+            <h2 onclick="alert('Loading weather report...')">Chicago</h2>
+            <h2 onclick="alert('Loading weather report...')">Dallas</h2>
+        </div>
+    </div>
+    <div class="locationTemp">
+        <div class="current">
+            <h1>San Jose</h1>
+        </div>
+        <div class="temp">
+            <h3>Show temperature in </h3>
+            <select name="tempSelect" id="tempSelect">
+                <option  value="f" class="tempF">F &deg; </option>
+                <option value="c" class="tempC">C &deg; </option>
+            </select>
+        </div>
+    </div>
+    <div class="bod">
+        <div class="day">
+            <h2>Today</h2>
+            <img src="./assets/some_rain.png" alt="some_rain">
+            <h5>some rain</h5>
+            <div class="disTemps">
+                <h2 class="degreesRed">75&deg;</h2>
+                <h2 class="degreesBlue">65&deg;</h2>
+                <h2 class="degreesRedc">23.9&deg;</h2>
+                <h2 class="degreesBluec">18.3&deg;</h2>
+            </div>
+        </div>
+        
+        <div class="day">
+            <h2>Tomorrow</h2>
+            <img src="./assets/some_sun.png" alt="some_sun">
+            <h5>some sun</h5>
+                <div class="disTemps">
+                    <h2 class="degreesRed">80&deg;</h2>
+                    <h2 class="degreesBlue">66&deg;</h2>
+                    <h2 class="degreesRedc">26.7&deg;</h2>
+                    <h2 class="degreesBluec">18.9&deg;</h2>
+                </div>
+        </div>
+        
+        <div class="day">
+            <h2>Friday</h2>
+            <img src="./assets/some_clouds.png" alt="some_rain">
+            <h5>some clouds</h5>
+            <div class="disTemps">
+                <h2 class="degreesRed">69&deg;</h2>
+                <h2 class="degreesBlue">61&deg;</h2>
+                <h2 class="degreesRedc">20.6&deg;</h2>
+                <h2 class="degreesBluec">16.1&deg;</h2>
+            </div>
+        </div>
+            <div class="day">
+            <h2>Saturday</h2>
+            <img src="./assets/some_sun.png" alt="some_sun">
+            <h5>some sun</h5>
+            <div class="disTemps">
+                <h2 class="degreesRed">78&deg;</h2>
+                <h2 class="degreesBlue">70&deg;</h2>
+                <h2 class="degreesRedc">25.6&deg;</h2>
+                <h2 class="degreesBluec">21.1&deg;</h2>
+            </div>
+        </div>
+    
+    
+</div>
+<div class="cookieHolder">
+    <div class="cookie">
+        <img src="./assets/cookie.png" alt="cookiepic">
+        <div class="cookieText">
+            <h2>Stop! Cookie time!</h2>
+            <h4>We use cookies (sadly not the edible ones) to personalize content & ads, to provide social media features and to analyze our traffic.  <span class="readMore">  Read more...</span></h4> 
+            
+        </div>
+        <button onclick="accept(cookieHolder)" type="submit" class="submit">I Accept</button>
+    </div>
+    
+</div>
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
