@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard - Noah B</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+    .color0 {
+        background-color: {{color0}};
+    }
+    .color1 {
+        background-color: {{color1}};
+    }
+</style>
+<body>
+    <div>
+        <table>
+            {% for i in range (x) %}
+            <tr>
+                {% for o in range (y) %}
+                <td class="color0"></td>
+                <td class="color1"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for o in range (y) %}
+                    <td class="color1"></td>
+                    <td class="color0"></td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        
+    </div>
+</body>
+</html>
