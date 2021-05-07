@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play the Great Number Game!</title>
+</head>
+<style>
+    .container {
+        
+    }
+    .main{
+        text-align: center;
+    }
+    .guess_div {
+        text-align: center;
+    }
+    .popout {
+        margin-left: 42%;
+        border: 2px solid black;
+        background-color: rgb(237, 93, 93);
+        width: 300px;
+    }
+    .correct {
+        margin-left: 42%;
+        border: 2px solid black;
+        background-color: rgb(52, 234, 64);
+        width: 300px;
+    }
+    .invalid {
+        margin-left: 42%;
+        border: 2px solid black;
+        background-color: red; 
+        background-image: linear-gradient(to bottom right, red, yellow);
+        width: 300px;
+    }
+    button {
+        padding: 5px 10px;
+        background-color: royalblue;
+        color: seashell;
+        text-emphasis-style: bold;
+    }
+    
+    .bottom {
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Welcome to the Great Number Game!</h1>
+            <h2>I am thinking of a nuber between 1 and 100...</h2>
+            <h2>Take a guess below!</h2>
+        </div>
+        <div class="guess_div">
+            {% if session['response'] == 'high' %}
+            <div class="popout">
+                <h1>Too High! Try again</h1>
+            </div>
+            {% endif %}
+            {% if session['response'] == 'low' %}
+            <div class="popout">
+                <h1>Too Low! Try again</h1>
+            </div>
+            {% endif %}
+            {% if session['response'] == 'correct' %}
+            <div class="correct">
+                <h1>Correct! It was {{session['random_num']}}!! You win! Gold star!</h1>
+            </div>
+            {% endif %}
+            {% if session['response'] == 'invalid' %}
+            <div class="invalid">
+                <h1>Invalid response! Stop trying to crash me!!</h1>
+            </div>
+            {% endif %}
+            <div class="bottom">
+                <form action="/guess" method='POST'>
+                <input type="text" name='guess'> 
+                <button id="guess" type="submit" value='guess'>Submit</button>
+                </form><form action="/reset">
+                <button class='bottom' type="submit">Reset Random Number</button></form>
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
