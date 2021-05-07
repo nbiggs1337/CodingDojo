@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="{{url_for('static', filename = 'style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class=counter_box>
+        <h1>Counter 1</h1>
+        <p>Clicked {{session['counter_1']}} times - <a href='/counter/1'>increment Counter 1</a></p>
+    </div>
+
+    <div class=counter_box>
+        <h1>Counter 2</h1>
+        <p>Clicked {{session['counter_2']}} times - <a href='/counter/2'>increment Counter 2</a></p>
+    </div>
+
+    <div class=counter_box>
+        <h1>Counter 3</h1>
+        <p>Clicked {{session['counter_3']}} times - <a href='/counter/3'>increment Counter 3</a></p>
+    </div>
+
+    <a href='/reset_counters'>Reset counters</a>
+</body>
+</html>
