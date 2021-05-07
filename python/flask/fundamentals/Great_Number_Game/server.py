@@ -7,6 +7,7 @@ app.secret_key = 'a secret key'
 @app.route('/')
 def index():
     if 'random_num' not in session:
+        session['count'] = 0
         session['random_num'] = random.randint(1,100)
         print(session['random_num'])
     return render_template('index.html')
@@ -17,14 +18,17 @@ def guess():
     try:
         if session['random_num'] == int(request.form['guess']):
             session['response'] = 'correct'
+            session['count'] +=1
             return redirect('/')
             
         elif session['random_num'] > int(request.form['guess']):
             session['response'] = 'low'
+            session['count'] +=1
             return redirect('/')
         
         elif session['random_num'] < int(request.form['guess']):
             session['response'] = 'high'
+            session['count'] +=1
             return redirect('/')
     except ValueError:
         session['response'] = 'invalid'
