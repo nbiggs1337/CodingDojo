@@ -1,0 +1,44 @@
+INSERT INTO dojos (name, created_at, updated_at) VALUES ('Chicago', NOW(), NOW());
+INSERT INTO dojos (name, created_at, updated_at) VALUES ('LA', NOW(), NOW());
+INSERT INTO dojos (name, created_at, updated_at) VALUES ('Dallas', NOW(), NOW());
+
+
+
+DELETE FROM dojos;
+
+
+INSERT INTO dojos (name, created_at, updated_at) VALUES ('Chicago', NOW(), NOW());
+INSERT INTO dojos (name, created_at, updated_at) VALUES ('LA', NOW(), NOW());
+INSERT INTO dojos (name, created_at, updated_at) VALUES ('Dallas', NOW(), NOW());
+
+
+
+INSERT INTO ninjas (first_name, last_name, age, updated_at, created_at, dojo_id) VALUES ('Noah', 'Biggs', 24, NOW(), NOW(), 1);
+INSERT INTO ninjas (first_name, last_name, age, updated_at, created_at, dojo_id) VALUES ('Jimmy', 'John', 27, NOW(), NOW(), 1);
+INSERT INTO ninjas (first_name, last_name, age, updated_at, created_at, dojo_id) VALUES ('Turtle', 'Crypto', 23, NOW(), NOW(), 1);
+
+
+
+INSERT INTO ninjas (first_name, last_name, age, updated_at, created_at, dojo_id) VALUES ('Sub', 'Way', 23, NOW(), NOW(), 2);
+INSERT INTO ninjas (first_name, last_name, age, updated_at, created_at, dojo_id) VALUES ('Shake', 'Shack', 43, NOW(), NOW(), 2);
+INSERT INTO ninjas (first_name, last_name, age, updated_at, created_at, dojo_id) VALUES ('Big', 'Willy', 21, NOW(), NOW(), 2);
+
+
+
+INSERT INTO ninjas (first_name, last_name, age, updated_at, created_at, dojo_id) VALUES ('No', 'Cap', 21, NOW(), NOW(), 3);
+INSERT INTO ninjas (first_name, last_name, age, updated_at, created_at, dojo_id) VALUES ('Unholy', 'Ghost', 21, NOW(), NOW(), 3);
+INSERT INTO ninjas (first_name, last_name, age, updated_at, created_at, dojo_id) VALUES ('Richard', 'Dawkins', 21, NOW(), NOW(), 3);
+
+
+
+SELECT * FROM ninjas WHERE dojo_id = 1;
+
+
+
+
+SELECT * FROM ninjas WHERE dojo_id = 3;
+
+
+
+
+SELECT first_name, last_name, dojo_id FROM ninjas WHERE id = 9;

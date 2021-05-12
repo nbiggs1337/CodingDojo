@@ -1,0 +1,13 @@
+LAUNCH MY SQL IN TERMINAL:
+
+mysql -uroot -p
+
+
+
+
+
+
+CREATE ALIAS: 
+
+
+echo 'export PATH=${PATH}:/usr/local/mysql/bin' >> ~/.zshrc && source ~/.zshrc

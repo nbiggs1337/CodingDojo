@@ -1,0 +1,40 @@
+INSERT INTO users (first_name, last_name, email, created_at, updated_at) VALUES ('John', 'Doe', 'anon1337@yahoo.com', NOW(), NOW());
+
+INSERT INTO users (first_name, last_name, email, created_at, updated_at) VALUES ('Jane', 'Doe', 'missanon1337@yahoo.com', NOW(), NOW());
+
+INSERT INTO users (first_name, last_name, email, created_at, updated_at) VALUES ('Devon', 'Crawford', 'randooo@yahoo.com', NOW(), NOW());
+
+
+
+SELECT * FROM users
+
+
+
+SELECT * FROM users WHERE email = 'anon1337@yahoo.com';
+
+
+
+SELECT * FROM users WHERE id = 3;
+
+
+
+UPDATE users SET last_name = 'Pancakes' WHERE id = 3;
+
+
+
+DELETE FROM users WHERE id = 2;
+
+
+
+SELECT * FROM users ORDER BY first_name ASC
+
+
+
+SELECT * FROM users ORDER BY first_name DESC
+
+
+
+
+
+
+

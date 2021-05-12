@@ -1,0 +1,5 @@
+SELECT first_name, tweet FROM users LEFT JOIN faves on users.id = faves.user_id LEFT JOIN tweets ON faves.tweet_id = tweets.id WHERE users.id =2 LIMIT 0, 1000
+
+DELETE FROM tweets WHERE id = 13
+
+INSERT INTO tweets (tweet, user_id, created_at, updated_at) VALUES ('HELLO WORLD', 1, NOW(), NOW())
