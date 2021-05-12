@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read (ALL)</title>
+</head>
+<style>
+    .container {
+        font-family: arial, sans-serif;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    h1, h2 {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 40px 5px
+    }
+    
+    td, th {
+    border: 2px solid #000000;
+    text-align: left;
+    padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    </style>
+<body>
+    <div class='container'>
+        <div class="top">
+            <h1>All Users</h1>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Created At</th>
+                </thead>
+                <tbody>
+                    {% for user in all_users%}
+                    <tr>
+                        <td>{{user['id']}}</td>
+                        <td>{{user['first_name']}} {{user['last_name']}}</td>
+                        <td>{{user['email']}}</td>
+                        <td>{{user['created_at']}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="bottom">
+            
+            <h2><a href="/user/create" title='Create a new user'>Create a New User</a></h2>
+        </div>
+        
+        
+        
+        
+    </div>
+    
+</body>
+</html>
