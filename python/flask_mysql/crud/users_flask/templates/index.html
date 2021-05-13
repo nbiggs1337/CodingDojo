@@ -16,6 +16,14 @@
         margin-left: 20px;
         margin-top: 50px;
     }
+    button {
+        padding:5px 15px ;
+        font-size: medium;
+        border: 3px solid black;
+        border-right: 6px solid black;
+        border-bottom: 6px solid black;
+    
+    }
     
     table {
     font-family: arial, sans-serif;
@@ -42,10 +50,11 @@
         <div class="table">
             <table>
                 <thead>
-                    <th>ID</th>
+                    <th value='ID'>ID</th>
                     <th>Full Name</th>
                     <th>Email</th>
                     <th>Created At</th>
+                    <th>Actions</th>
                 </thead>
                 <tbody>
                     {% for user in all_users%}
@@ -54,6 +63,7 @@
                         <td>{{user['first_name']}} {{user['last_name']}}</td>
                         <td>{{user['email']}}</td>
                         <td>{{user['created_at']}}</td>
+                        <td><form action="/user/{{user['id']}}"><button type="submit">Show</button></form> <form action="/user/{{user['id']}}/edit" method="POST" ><button type="submit">Edit</button></form> <form action="/delete/{{user['id']}}" name='id' method="POST" ><button type="submit">Delete</button></form></td> 
                     </tr>
                     {% endfor %}
                 </tbody>

@@ -169,6 +169,42 @@ class SinglyLinkedList {
     secondToLast() {
 
     }
+
+
+
+
+//MaxToBack - Switch max value to tail and return list
+
+    MaxToFront() {
+        if (this.head == null) {
+            return null;
+        }
+        var temp = this.tail.value;
+        var runner = this.head;
+        var currentMax = runner;
+        while (runner != null) {
+        ​
+            if (runner.value > currentMax.value) {
+                currentMax = runner;
+            }
+            runner = runner.next;
+            this.tail = currentMax.value;
+            runner = temp.value;
+        }
+        ​
+        return new_sll;
+        
+    }
+
+
+
+
+
+// MinToFront() - Switch min value with head and return list
+
+
+
+
 }
 
 // generateNewList(length, min_value, max_value) -> creates a new SLL of the
@@ -188,9 +224,12 @@ function generateNewList(length = 10, min_value = 0, max_value = 10) {
 
 var new_sll = generateNewList(length = 10, min_value = -10, max_value = 10);
 console.log(new_sll.display());
-console.log(new_sll.findMinNode().value);
-console.log(new_sll.findMaxNode().value);
-console.log(new_sll.secondToLast());
+console.log(new_sll.MaxToFront());
+console.log(new_sll.display());
+
+
+
+
 
 
 
