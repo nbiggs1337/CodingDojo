@@ -172,36 +172,62 @@ class SinglyLinkedList {
 
 
 
+    moveMinToFront(){
 
-//MaxToBack - Switch max value to tail and return list
+        if(!this.head) return this;
 
-    MaxToFront() {
-        if (this.head == null) {
-            return null;
-        }
-        var temp = this.tail.value;
+        this.minNode = this.head;
         var runner = this.head;
-        var currentMax = runner;
-        while (runner != null) {
-        ​
-            if (runner.value > currentMax.value) {
-                currentMax = runner;
+        // Loop to find minNode
+        while(runner){
+            if (runner.val < this.minNode.val){
+                this.minNode = runner;
             }
             runner = runner.next;
-            this.tail = currentMax.value;
-            runner = temp.value;
         }
-        ​
-        return new_sll;
-        
+        runner = this.head;
+        while(runner){
+            if(runner.next == this.minNode){
+                runner.next = this.minNode.next;
+                this.minNode.next = this.head;
+                this.head = this.minNode;
+                return this;
+            }
+            runner = runner.next;
+        }
+
     }
 
+    moveMaxToBack(){
+        if(!this.head) return this;
+
+        this.maxNode = this.head;
+        var runner = this.head;
+        
+        while(runner){
+            if(runner.val > this.maxNode.val){
+                this.maxNode = runner;
+            }
+            runner = runner.next;
+        }
+        
+        
+        
+        runner = this.head;
+        while(runner){
+            if(runner.next == this.maxNode){
+                break;
+            }
+            runner = runner.next
+        }
+        runner.next = this.maxNode.next;
+        this.tail.next = this.maxNode;
+        this.maxNode.next = null;
+        this.tail = this.maxNode;
+        return this;
 
 
-
-
-// MinToFront() - Switch min value with head and return list
-
+    }
 
 
 
