@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Ninja</title>
+</head>
+<style>
+    * {
+        font-family: arial, sans-serif;
+    }
+    .container {
+        width: 50%;
+        height: fit-content;
+        margin: auto;
+        justify-content: space-between ;
+    }
+    .form {
+        display: flex;
+        width: 120%;
+    }
+    form {
+        width: 120%;
+    }
+    .input {
+        height: 100px;
+    }
+    h1 {
+        margin-bottom: 50px;
+    }
+    h2 {
+        display: inline;
+    }
+    .one, .two, .three, .four {
+        margin: 25px;
+    }
+    .fname {
+        margin-left: 33px;
+    }
+    .lname {
+        margin-left: 36px;
+    }
+    .age {
+        margin-left: 113px;
+    }
+    input {
+        width: 200px;
+        height: 50px;
+        border: 2px solid black;
+        font-size: large;
+    }
+    button {
+        font-size: large;
+        padding: 5px 10px;
+        margin-left: 193px;
+        border: 3px solid black;
+        color: rgb(45, 45, 45);
+        background-color: whitesmoke;
+    }
+    select {
+        font-size: large;
+        padding: 5px 10px;
+        margin-left: 100px;
+        border: 2px solid black;
+        color: rgb(45, 45, 45);
+        background-color: whitesmoke;
+    }
+    .a {
+        margin-top: 200px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>New Ninja</h1>
+        </div>
+        <div class="form">
+            <form action="/create_ninja" method="POST">
+                <div class="one"><h2>Dojo:</h2> <select name="dojo_id">
+                    {% for dojo in dojos %}
+                    <option value="{{dojo['id']}}" name="dojo_id">{{dojo['name']}}</option>
+                    {% endfor %}
+                </select><br></div>
+                <div class="two"><h2>First Name:</h2><input class="fname" type="name" name="first_name"><br></div>
+                <div class="three"><h2>Last Name:</h2><input class="lname" type="name" name="last_name"><br></div>
+                <div class="four"><h2>Age:</h2><input class="age" type="age" name="age"><br></div>
+            
+            
+                <button type="submit" class="create">Create</button>
+                
+                
+                
+            </form>
+        </div>
+        
+        
+        
+        
+        
+        <h2><a href="/" class="a">Home</a></h2>
+        
+    </div>
+</body>
+</html>

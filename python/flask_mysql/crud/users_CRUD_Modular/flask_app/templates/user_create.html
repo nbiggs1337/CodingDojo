@@ -30,26 +30,36 @@
     .form {
         display: flex;
     }
-
+    button {
+        margin-top: 50px;
+        padding:10px 30px ;
+        font-size: larger;
+        border: 3px solid black;
+        border-right: 6px solid black;
+        border-bottom: 6px solid black;
+    
+    }
     
     
 </style>
 <body>
     <div class="container">
         <div class="top">
-            <h1>User {{user['id']}}</h1>
+            <h1>Add a New User</h1>
             <h3><a href="/" title='Go to home page'>Home</a></h3>
         </div>
-        <div class="info">
-            <h2>Full Name:    {{user['first_name']}}  {{user['last_name']}}  </h2><br>
-            <h2>Email:       {{user['email']}} </h2><br>
-            <h2>Created On:      {{user['created_at']}} </h2><br>
-            <h2>Last Updated On:      {{user['created_at']}} </h2><br>
+        <div class="form">
+            <form action="/create" method='POST'>
+            <h2>First Name:</h2><input type="name" name='first_name'><br>
+            <h2>Last Name:</h2><input type="name" name='last_name'><br>
+            <h2>Email:</h2><input type="email" name='email'><br>
+            <button type="submit">Create</button>
+            </form>
+            
+            
+            
         </div>
-        <div class="links">
-            <form action="/user/{{user['id']}}/edit" method="post"> <button type="submit">Edit</button></form>
-            <form action="/delete/{{user['id']}}" method="post"> <button type="submit">Delete</button></form>
-        </div>
+        
         
         
     </div>

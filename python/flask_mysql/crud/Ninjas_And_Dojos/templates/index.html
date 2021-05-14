@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos</title>
+</head>
+<style>
+    * {
+        font-family: arial, sans-serif;
+    }
+    .container {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between ;
+    }
+    .box{
+        border: 3px solid black;
+        padding: 25px 100px 25px 20px;
+    }
+    .input {
+        height: 100px;
+    }
+    h1 {
+        margin-bottom: 50px;
+    }
+    .ininput {
+        display: flex;
+    }
+    input {
+        position: relative;
+        bottom: 100px;
+        width: 200px;
+        height: 50px;
+        border: 2px solid black;
+        font-size: large;
+        margin-left: 10px;
+        margin-top: 100px;
+    }
+    button {
+        font-size: large;
+        padding: 5px 10px;
+        margin-left: 100px;
+        border: 3px solid black;
+        color: rgb(45, 45, 45);
+        background-color: whitesmoke;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="label">
+                <h1>New Dojo</h1>
+            </div>
+            
+            <div class="input">
+                
+                <form action="/newdojo" name="name", method="POST">
+                    <div class="ininput">
+                    <h3>Dojo Name:</h3><input type="text" action='/newdojo' name='name'> <br>
+                    </div>
+                    <button type="submit">Create</button>
+                </form>
+            </div>
+        </div>
+        <div class="all">
+            <div class="title">
+                <h1>All Dojos</h1>
+            </div>
+            <div class="box">
+                {%for dojo in dojos%}
+                
+                <a href="/dojos/{{dojo['id']}}">{{dojo['name']}} </a> <br>
+                
+                {% endfor %}
+                <br>
+                <br>
+                
+                
+                
+            </div>
+                
+            <a href="/ninjas" class="add"><h3>Add Ninjas</h3></a>
+            
+            
+            
+            
+        </div>
+    
+    
+    
+    
+    
+    
+    </div>
+
+</body>
+</html>

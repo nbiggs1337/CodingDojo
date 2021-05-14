@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo - Show</title>
+</head>
+<style>
+    * {
+        font-family: arial, sans-serif;
+    }
+    .container {
+        width: 50%;
+        margin: auto;
+    }
+    h1, h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+
+    }
+    
+    td, th {
+        border: 3px solid #000000;
+        text-align: left;
+        padding: 8px;
+        font-size: large;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    </style>
+<body>
+    <div class="container">
+        
+        <div class="title">
+            <h1>{{all_ninjas[0]['name']}} Ninjas</h1>
+        </div>
+        
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </thead>
+            <tbody>
+                {% for ninja in all_ninjas %}
+                <tr>
+                    <td>{{ninja['first_name']}} </td>
+                    <td>{{ninja['last_name']}}</td>
+                    <td>{{ninja['age']}} </td>
+                </tr>
+                {% endfor %}
+                
+            </tbody>
+            
+            
+            
+            
+            
+            
+        </table>
+        
+        
+        <h2><a href="/">Home</a></h2>
+    </div>
+</body>
+</html>
