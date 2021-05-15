@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book - Show</title>
+</head>
+<style>
+    * {
+        font-family: arial, sans-serif;
+    }
+    
+    .container {
+        display: flex;
+        margin-left: 16%;
+        margin-right: 20%;
+        justify-content: space-around;
+    }
+    .authors {
+        margin: 10px;
+        margin-left: 120px;
+        font-size: larger;
+    }
+    h1 {
+        margin-bottom: 50px;
+    }
+    td, .h3 {
+        font-size: large;
+    }
+    .author {
+        margin-top: 50px;
+        position: relative;
+        top: 55px;
+    }
+    
+    .righttitle {
+        margin-top: 60;
+        margin-bottom: 1px;
+    }
+    .submit {
+        font-size: large;
+        align-self:flex-end;
+        padding: 5px 25px;
+        
+        color: black;
+        background-color: whitesmoke;
+        border: 3px solid black;
+        border-bottom: 6px solid black;
+        border-right: 6px solid black;
+        
+    }
+    .selection {
+        position: relative;
+        left: 100px;
+        top: -200px;
+        margin-bottom: 200px;
+    }
+    .add {
+        margin-top: -30px;
+    }
+    
+    .home {
+        margin-top: 200px;
+        margin-left: 21%;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Title: {{book[0]['title']}}</h1>
+            
+            <table>
+                <thead>
+                    <th><h2>Favorited By:</h2></th>
+                </thead>
+                <tbody>
+                    {% for fav in book %}
+                    <tr>
+                        <td>{{fav['name']}}</td>
+                    </tr>
+                    {% endfor %}
+                    
+                </tbody>
+                
+                
+                
+                
+                
+            </table>
+            
+            
+            
+        </div>
+        <div class="right">
+            <h1 class="righttitle">Add Books Favorite</h1>
+            
+            <div class="add">
+                <form action="/author_fav" method="POST">
+                <h2 class="author">Author:</h2><select name="author_id" class="authors" class='selection' id="new_fav">
+                    
+                    {% for author in authors %}
+                    <option value="{{author['id']}}" class="authors" name='author_id'>{{author['name']}}</option>
+                    {% endfor %}
+                    
+                </select>
+                <input type="hidden" name="book_id" value="{{book[0]['id']}}">
+                <button type="submit" class="submit" class='selection'>Add</button>
+                
+                </form>
+            </div>
+            
+        </div>
+        
+    </div>
+    <a href="/authors"><h3 class="home">Home</h3></a>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+</head>
+<style>
+      * {
+        font-family: arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        margin-left: 20%;
+        margin-right: 25%;
+        justify-content: space-between;
+    }
+    h1 {
+        margin-bottom: 40px;
+    }
+    .h2 {
+        display:inline;
+        margin-top: 20px;
+    }
+    a {
+        margin: 10px;
+        font-size: larger;
+    }
+    .name {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .input {
+        position: relative;
+        bottom: 45px;
+        left: 170px;
+        height: 25px;
+        width: 200px;
+        font-size: medium;
+    }
+    .submit {
+        font-size: large;
+        align-self:flex-end;
+        padding: 5px 25px;
+        position: relative;
+        left: 170px;
+        color: black;
+        background-color: whitesmoke;
+        border: 3px solid black;
+        border-bottom: 6px solid black;
+        border-right: 6px solid black;
+        
+    }
+    .names {
+        padding: 10px 60px 20px 15px;
+        border: 2px solid black;
+    }
+    
+    
+    .home {
+        display: inline block;
+        margin-top: 200px;
+        margin-left: 20%;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>New Book</h1>
+            
+            <form action="/add_book" method="POST">
+            <h3>Title:</h3>
+            <input type="text" name="title" class="input" id="title">
+            
+            <h3>Number of pages:</h3>
+            <input type="text" name="num_of_pages" class="input" id="num_of_pages"><br>
+            
+            <button type="submit" class="submit">Create</button>
+            
+            
+            </form>
+        </div>
+        <div class="right">
+            <h1>All Books</h1>
+            
+            <div class="books">
+                
+                {% for book in books %}
+                
+                <a href="/books/{{book['id']}}">{{book['title']}}</a> <br>
+                
+                {% endfor %}
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    <a href="/authors"><h3  class="home">Home</h3></a>
+</body>
+</html>

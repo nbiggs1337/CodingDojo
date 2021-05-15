@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Show</title>
+</head>
+<style>
+    * {
+        font-family: arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        margin-left: 16%;
+        margin-right: 20%;
+        justify-content: space-around;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+td, th {
+    border: 2px solid #1f1e1e;
+    text-align: left;
+    padding: 8px;
+    }
+    
+tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    #new_fav {
+        font-size: large;
+        position: relative;
+        bottom: 45px;
+        left: 75px;
+    }
+    #new_fav_btn {
+        margin-top: 0px;
+        margin-left: 75px;
+        padding: 5px 10px;
+        font-size: large;
+        color: black;
+        background-color: whitesmoke;
+        border: 3px solid black;
+        border-bottom: 6px solid black;
+        border-right: 6px solid black;
+    }
+    
+    
+    .home {
+        margin-top: 200px;
+        margin-left: 21%;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>{{author[0]['name']}}'s Favorites</h1>
+            
+            <table>
+                <thead>
+                    <th>Title</th>
+                    <th># of Pages</th>
+                </thead>
+                <tbody>
+                    {% for book in author %}
+                    <tr>
+                        <td>{{book['title']}}</td>
+                        <td>{{book['num_of_pages']}}</td>
+                    </tr>
+                    {% endfor %}
+                    
+                </tbody>
+                
+                
+                
+                
+                
+            </table>
+            
+            
+            
+        </div>
+        <div class="right">
+            <h1>Add Authors Favorite</h1>
+            
+            <div class="add">
+                <form action="/add_fav" method="POST">
+                <h2>Book:</h2><select name="book_id" id="new_fav">
+                    
+                    {% for book in books %}
+                    <option value="{{book['id']}}" name='book_id'>{{book['title']}}</option>
+                    {% endfor %}
+                    
+                </select> <br>
+                <input type="hidden" name="author_id" value="{{author[0]['id']}}">
+                <button id="new_fav_btn" type="submit">Add</button>
+                
+                </form>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        
+    </div>
+    <a href="/authors"><h2 class="home">Home</h2></a>
+</body>
+</html>
