@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<style>
+    * {
+        font-family: arial, sans-serif;
+    }
+    .container {
+        margin-left: 30%;
+        width: 75%;
+    }
+    input {
+        font-size: larger;
+    }
+    h1 {
+        margin-bottom: 60px;
+    }
+    p {
+        font-size: large;
+        color: rgb(186, 3, 3);
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Email Validation</h1>
+    
+        {% with messages = get_flashed_messages() %}
+            {% if messages %} 
+                {% for message in messages %} 
+                    <p>{{message}}</p>                  
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <form action="/add_email" method='POST'>
+        <h2>Email Address: </h2><input type="text" name="email" id="email">
+        <input type="submit" value="Submit">
+        
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+</head>
+<style>
+    * {
+        font-family: arial, sans-serif;
+    }
+    .container {
+        margin-left: 30%;
+        width: 75%;
+    }
+    th {
+        text-decoration: underline;
+    }
+    p {
+        font-size: large;
+        color: rgb(6, 169, 20);
+        text-decoration: underline;
+    }
+    table {
+        font-size: larger;
+        border-collapse: collapse;
+    }
+    td, th {
+    border: 1px solid #343434;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    
+</style>
+<body>
+    <div class="container">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %} 
+                {% for message in messages %} 
+                    <p>{{message}}</p>                  
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <table>
+            <thead>
+                <tr>
+                <th>Email Addresses Entered:</th>
+                <th>Date Created:</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for email in emails %}
+                <tr>
+                    <td>{{email['email']}}</td>
+                    <td>{{email['created_at']}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            
+            
+        </table>
+    </div>
+    
+</body>
+</html>
