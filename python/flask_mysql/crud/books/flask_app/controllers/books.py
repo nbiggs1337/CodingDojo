@@ -9,7 +9,7 @@ from flask_app.models.book import Favorites
 
 @app.route('/')
 def index():
-    return 'Go to /authors for content :)'
+    return redirect('/authors')
 
 
 @app.route('/authors')
