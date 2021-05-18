@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged In</title>
+</head>
+<style>
+    * {
+        font-family: arial, sans-serif;
+    }
+    .container {
+        width: 80%;
+        margin-left: 25%;
+    }
+    h1, h2 {
+        margin-bottom: 60px;
+        margin-top: 50px;
+    }
+    a {
+        font-size: large;
+    }
+    img {
+        border-radius: 80%;
+        width: 40%;
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Welcome {{session['first_name']}}! You are now logged in.</h1>
+        
+        <a href="/logout">Sign out</a>
+        
+        <h2>Enjoy this cat picture. That is all we have to offer here.</h2><br>
+        <img src="https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg" alt="cute cat picture">
+        
+    </div>
+</body>
+</html>

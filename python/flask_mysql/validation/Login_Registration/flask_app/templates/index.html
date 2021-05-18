@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Login/Register</title>
+</head>
+<style>
+    * {
+        font-family: arial, sans-serif;
+    }
+    .container {
+        width: 60%;
+        margin-left: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    h1 {
+        margin-bottom: 40px;
+    }
+    .register {
+        margin-top: 50px;
+    }
+    p {
+        color: red;
+    }
+    input {
+        font-size: large;
+    }
+    .submit {
+        padding: 5px 10px;
+        margin-top: 20px;
+        background-color: whitesmoke;
+        border: 3px solid black;
+        border-right: 5px solid black;
+        border-bottom: 5px solid black;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="login">
+            <h1>Login and Registration</h1>
+            
+            <h1>Login Here!</h1>
+            
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}  
+                    {% for message in messages %}
+                        <p>{{message}}</p> 
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            
+            <form action="/login" method="POST">
+                <h3>Email Address:</h3> <input type="email" name="email"> <br>
+                <h3>Password:</h3> <input type="password" name="password"> <br>
+                <input type="submit" value="Submit" class="submit">
+                
+                
+            </form>
+            
+        </div>
+        <div class="register">
+            <h1 class="register">Register Here!</h1>
+            
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}  
+                    {% for message in messages %}
+                        <p>{{message}}</p> 
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            
+            <form action="/register" method="POST">
+            <h3>First Name:</h3> <input type="text" name="first_name"> <br>
+            <h3>Last Name:</h3> <input type="text" name="last_name"> <br>
+            <h3>Email Address:</h3> <input type="email" name="email"> <br>
+            <h3>Password:</h3> <input type="password" name="password"> <br>
+            <h3>Confirm Password:</h3> <input type="password" name="confirm_password"> <br>
+            <input type="submit" value="Submit" class="submit">
+            
+            </form>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
