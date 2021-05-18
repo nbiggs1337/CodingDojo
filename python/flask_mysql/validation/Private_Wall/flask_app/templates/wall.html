@@ -10,32 +10,160 @@
     * {
         font-family: arial, sans-serif;
     }
-    .container {
-        width: 80%;
-        margin-left: 25%;
+    .top {
+        display: flex;
+        justify-content: space-between;
     }
-    h1, h2 {
-        margin-bottom: 60px;
-        margin-top: 50px;
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+    }
+    .topright {
+        display: flex;
+        margin-right: 5%;
+    
+    }
+    .topleft {
+        display: inline-block;
+        width: 16%;
+        margin-left: 3%;
+    }
+    h1 {
+        margin: 3px 10px;
+    }
+    .logout {
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+    .vl {
+        border-left: 3px solid rgb(26, 28, 26);
+        height: 500px;
+    }
+    .mainright {
+        margin-left: 20px;
+        width: 40%;
+    }
+    .send {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+    h2 {
+        text-decoration: underline;
+    }
+    .rightname {
+        align-self: center;
+        /* margin-right: 20px; */
+    }
+    .dojowall {
+        margin-left: 10%;
+    }
+    .mainleft {
+        width: 52%;
+    }
+    .namedate {
+        display: flex;
+        height: 40px;
+        align-content: center;
+    }
+    .sendmsg{
+        margin-top: 20px;
+    }
+    .msg {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15px;
+        margin-left: 15px;
     }
     a {
         font-size: large;
     }
-    img {
-        border-radius: 80%;
-        width: 40%;
-        margin-left: 50px;
+    .timestamp {
+        margin-left: 15px;
+        margin-top: 43px;
+        align-self: center;
+    }
+    .button {
+        font-size: large;
+        margin-left: 5px;
+        height: 30px;
+        margin-top: 60px;
+        border: 2px solid black;
+        border-right: 4px solid black;
+        border-bottom: 4px solid black;
+        background-color: whitesmoke;
+    }
+    .btnspace {
+        margin-left: 10px;
+    }
+    .delete {
+        width: 20px;
     }
 </style>
 <body>
-    <div class="container">
-        <h1>Welcome {{session['first_name']}}! You are now logged in.</h1>
+    <div class="top">
+        <div class="topleft">
+            <h1 class="dojowall">Coding Dojo Wall</h1>
+        </div>
         
-        <a href="/logout">Sign out</a>
-        
-        <h2>Enjoy this cat picture. That is all we have to offer here.</h2><br>
-        <img src="https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg" alt="cute cat picture">
+        <div class="topright">
+            <h1>Welcome {{session['first_name']}}!</h1>
+            <a href="/logout" class="logout">Sign out</a>
+        </div>
         
     </div>
+    <hr>
+    <div class="container">
+        
+        <div class="mainleft">
+            <h2> {{(messages|length)}} Message(s) for You</h2>
+            
+            {% for message in messages %}
+                <div class="message">
+                    <div class="namedate">
+                        <h4>{{message['first_name']}} {{message['last_name']}} said: </h4> <h6 class="timestamp">({{message['created_at']}})</h6>
+
+                    </div>
+                    
+                    <div class="msg">
+                        <p class="msgcon">{{message['content']}}</p>
+                        <form action="/destroy/{{message['id']}}" class="btnspace" method="POST"> <button type="submit">
+                                <img border="0" class="delete" alt="Delete" src="https://freesvg.org/img/trash.png"></button></form>
+                    </div>
+                    
+                </div>
+            {% endfor %}
+            
+        </div>
+        <div class="vl"></div>
+        <div class="mainright">
+            
+            <h2>Send Messages</h2>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}  
+                    {% for message in messages %}
+                        <p>{{message}}</p> 
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            
+            {% for user in users %}
+                <div class="send">
+                    
+                    <div class="rightname">{{user['first_name']}} {{user['last_name']}}: </div>
+                    <div class="sendmsg">
+                        <form action="send/{{user['id']}}" method="POST">
+                            <textarea name="content" id="content" cols="60" rows="8"></textarea>
+                            
+                    </div>
+                    <button type="submit" class="button">Send</button>
+                        </form>
+                </div>
+                
+            {% endfor %}
+        </div>
+    </div>
+    
 </body>
 </html>

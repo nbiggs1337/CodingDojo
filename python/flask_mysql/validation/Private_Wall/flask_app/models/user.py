@@ -44,7 +44,21 @@ class User():
             return None
         
         else:
+            print(User(result[0]))
             return User(result[0])
+    
+    
+    @classmethod
+    def get_all(cls, data):
+        query = 'SELECT * FROM users WHERE id != %(receive_id)s;'
+        return connectToMySQL('private_wall').query_db(query, data)
+    
+    
+    
+    
+    
+    
+    
     
     
     

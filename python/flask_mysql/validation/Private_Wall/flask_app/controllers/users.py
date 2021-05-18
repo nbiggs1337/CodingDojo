@@ -3,6 +3,7 @@ from flask_app import app
 from flask import render_template, redirect, request, session, flash
 from flask_app.config.mysqlconnection import connectToMySQL
 from flask_app.models.user import User
+from flask_app.models.message import Message
 from flask_bcrypt import Bcrypt
 #import new model of 'messages' when created and ready
 
@@ -32,7 +33,6 @@ def register_user():
     return redirect('/')
 
 
-
 @app.route('/login', methods=['POST'])
 def login_user():
     data = {
@@ -59,18 +59,43 @@ def login_user():
 
 @app.route('/wall')
 def login_success():
-    try:
-        if session['logged_in'] == True:
-            return render_template('wall.html')
-        else:
-            session.clear()
-            flash('You must be logged in to enter this website.')
-            return redirect('/')
-    except:
+    if "logged_in" in session:
+        data = {
+            'receive_id': session['user_id']
+        }
+        return render_template('wall.html', messages = Message.get_user_messages(data), users = User.get_all(data))
+        
+    else:
         session.clear()
         flash('You must be logged in to enter this website.')
         return redirect('/')
 
+
+@app.route('/send/<int:id>', methods=['POST'])
+def send(id):
+    data = {
+        'receive_id': id,
+        'send_id': session['user_id'],
+        'content': request.form['content']
+    }
+    if len(request.form['content']) < 5 or len(request.form['content']) > 200:
+        flash('Invalid message length. (5 - 200 characters only.)')
+        return redirect('/wall')
+    else:
+        flash('Message sent successfully!')
+        Message.send(data)
+        return redirect('/wall')
+
+
+## DANGER WHEN EDITING - DESTROY ##
+@app.route('/destroy/<int:id>', methods=['POST'])
+def destroy(id):
+    data = {
+        'id': id
+    }
+    Message.destroy(data)
+    return redirect('/wall')
+## DAT BOI DANGEROUS ##
 
 
 @app.route('/logout')
