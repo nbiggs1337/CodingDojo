@@ -15,17 +15,17 @@
 
 function inOrderCombinations(input, output = [], position = 0, partial = '') {
     //somewhere in here, push to output maybe?
-
+    
     if (input.length == position) {
         output.push(partial);
     }
-
+    
     // when you call recursively, make sure to provide the output
     else {
         inOrderCombinations(input, output, position + 1, partial + input[position]);
         inOrderCombinations(input, output, position + 1, partial);
     }
-
+    
     return output;
 }
 
