@@ -28,7 +28,7 @@ function inOrderCombinations(input, output = [], position = 0, partial = '') {
     
     return output;
 }
-
+//^^ best solution
 console.log(inOrderCombinations('zbon'));
 
 // function inOrderSubsets(str, solutions = [], partial = "") {
@@ -43,3 +43,5 @@ console.log(inOrderCombinations('zbon'));
 // }
 
 // console.log(inOrderSubsets('zbonik'));
+
+// ^^meh solutiom
