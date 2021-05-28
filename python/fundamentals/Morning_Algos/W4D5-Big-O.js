@@ -7,31 +7,54 @@
 // https://www.bigocheatsheet.com/
 
 
-function binarySearch(input, target, something, maybe) {
-    if (target < input[0] || target > input[input.length-1]){
-        var recurse = false;
-    }
-    var mid = Math.ceil(input.length/2);
-    if (input[mid] == target){
-        
-        var recurse = true;
-    }
-    if (target == input[0] || target == input[input.length-1]){
-        
-        var recurse = true;
-    }
+function binarySearch(input, target, left = 0, right = input.length - 1) {
     
-    
-    else if (target < input[mid]){
-        input = input.slice(0,mid);
-        var recurse = binarySearch(input, target);
+    if(left > right) {
+        return false
     }
-    else if (target > input[mid]){
-        input = input.slice(mid, input.length);
-        var recurse = binarySearch(input, target);
+
+    midpoint = Math.floor((right+left)/2)
+
+    if(target == input[midpoint]) {
+        return true;
     }
-    return recurse;
+
+    if(target < input[midpoint]) {
+        right = midpoint - 1 ;
+        return binarySearch(input,target,left,right);
+    }
+    else if(target > input[midpoint]) {
+        left = midpoint + 1;
+        return binarySearch(input,target,left,right)
+    }
 }
+
+
+// function binarySearch(input, target, something, maybe) {
+//     if (target < input[0] || target > input[input.length-1]){
+//         var recurse = false;
+//     }
+//     var mid = Math.ceil(input.length/2);
+//     if (input[mid] == target){
+        
+//         var recurse = true;
+//     }
+//     if (target == input[0] || target == input[input.length-1]){
+        
+//         var recurse = true;
+//     }
+    
+    
+//     else if (target < input[mid]){
+//         input = input.slice(0,mid);
+//         var recurse = binarySearch(input, target);
+//     }
+//     else if (target > input[mid]){
+//         input = input.slice(mid, input.length);
+//         var recurse = binarySearch(input, target);
+//     }
+//     return recurse;
+// }
 
 input = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 16, 18, 19, 20, 21, 22, 24, 25, 26, 27, 29]
 
