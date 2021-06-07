@@ -6,7 +6,8 @@ namespace HelloCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string place = "Coding Dojo";
+            Console.WriteLine($"Hello {place}");
         }
     }
 }

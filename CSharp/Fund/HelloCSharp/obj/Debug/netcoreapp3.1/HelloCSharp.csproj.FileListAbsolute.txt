@@ -10,3 +10,15 @@
 /Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.dll
 /Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.pdb
 /Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.genruntimeconfig.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.deps.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.runtimeconfig.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.runtimeconfig.dev.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/bin/Debug/netcoreapp3.1/HelloCSharp.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.csprojAssemblyReference.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.AssemblyInfoInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.AssemblyInfo.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.csproj.CoreCompileInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/obj/Debug/netcoreapp3.1/HelloCSharp.genruntimeconfig.cache

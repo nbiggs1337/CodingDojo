@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/HelloCSharp/HelloCSharp.csproj": {}
+    "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/HelloCSharp.csproj": {}
   },
   "projects": {
-    "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/HelloCSharp/HelloCSharp.csproj": {
+    "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/HelloCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/HelloCSharp/HelloCSharp.csproj",
+        "projectUniqueName": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/HelloCSharp.csproj",
         "projectName": "HelloCSharp",
-        "projectPath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/HelloCSharp/HelloCSharp.csproj",
+        "projectPath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/HelloCSharp.csproj",
         "packagesPath": "/Users/noahbiggs/.nuget/packages/",
-        "outputPath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/HelloCSharp/obj/",
+        "outputPath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/noahbiggs/.nuget/NuGet/NuGet.Config"

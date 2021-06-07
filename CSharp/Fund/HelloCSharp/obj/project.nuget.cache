@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VyfFbt1mc53SeD/QOH5Af+mQtQao00MMf5eEzxLyrZmNRPfTZRh3kgDmHhrATFSD5m2+X3baU0cAfXa4a9dcfQ==",
+  "dgSpecHash": "XzR+hNdqbT8M06LtHGaQs5QgAWIlQ5+/HOJ9ZQRmQEMtLI/vxT8a3X9M3f4Kifc9K3YHHxdefNyYWdXbV8qKlw==",
   "success": true,
-  "projectFilePath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/HelloCSharp/HelloCSharp.csproj",
+  "projectFilePath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/HelloCSharp/HelloCSharp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
