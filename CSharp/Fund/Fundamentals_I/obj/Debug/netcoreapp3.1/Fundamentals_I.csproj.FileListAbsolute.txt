@@ -1,0 +1,12 @@
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/bin/Debug/netcoreapp3.1/Fundamentals_I.deps.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/bin/Debug/netcoreapp3.1/Fundamentals_I.runtimeconfig.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/bin/Debug/netcoreapp3.1/Fundamentals_I.runtimeconfig.dev.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/bin/Debug/netcoreapp3.1/Fundamentals_I.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/bin/Debug/netcoreapp3.1/Fundamentals_I.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/obj/Debug/netcoreapp3.1/Fundamentals_I.csprojAssemblyReference.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/obj/Debug/netcoreapp3.1/Fundamentals_I.AssemblyInfoInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/obj/Debug/netcoreapp3.1/Fundamentals_I.AssemblyInfo.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/obj/Debug/netcoreapp3.1/Fundamentals_I.csproj.CoreCompileInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/obj/Debug/netcoreapp3.1/Fundamentals_I.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/obj/Debug/netcoreapp3.1/Fundamentals_I.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Fundamentals_I/obj/Debug/netcoreapp3.1/Fundamentals_I.genruntimeconfig.cache
