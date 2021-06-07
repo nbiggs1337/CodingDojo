@@ -1,0 +1,12 @@
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/obj/Debug/netcoreapp3.1/Collections.csprojAssemblyReference.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/obj/Debug/netcoreapp3.1/Collections.AssemblyInfoInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/obj/Debug/netcoreapp3.1/Collections.AssemblyInfo.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/obj/Debug/netcoreapp3.1/Collections.csproj.CoreCompileInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/bin/Debug/netcoreapp3.1/Collections.deps.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/bin/Debug/netcoreapp3.1/Collections.runtimeconfig.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/bin/Debug/netcoreapp3.1/Collections.runtimeconfig.dev.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/bin/Debug/netcoreapp3.1/Collections.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/bin/Debug/netcoreapp3.1/Collections.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/obj/Debug/netcoreapp3.1/Collections.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/obj/Debug/netcoreapp3.1/Collections.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Collections/obj/Debug/netcoreapp3.1/Collections.genruntimeconfig.cache
