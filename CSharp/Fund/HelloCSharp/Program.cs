@@ -6,8 +6,12 @@ namespace HelloCSharp
     {
         static void Main(string[] args)
         {
-            string place = "Coding Dojo";
-            Console.WriteLine($"Hello {place}");
+            Random rand = new Random();
+            for(int val = 0; val < 10; val++)
+            {
+                //Prints the next random value between 2 and 8
+                Console.WriteLine(rand.Next(2,8));
+            }
         }
     }
 }
