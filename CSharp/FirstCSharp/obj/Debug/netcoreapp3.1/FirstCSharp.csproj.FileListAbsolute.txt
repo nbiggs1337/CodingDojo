@@ -1,0 +1,12 @@
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/bin/Debug/netcoreapp3.1/FirstCSharp.deps.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/bin/Debug/netcoreapp3.1/FirstCSharp.runtimeconfig.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/bin/Debug/netcoreapp3.1/FirstCSharp.runtimeconfig.dev.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/bin/Debug/netcoreapp3.1/FirstCSharp.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/bin/Debug/netcoreapp3.1/FirstCSharp.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/obj/Debug/netcoreapp3.1/FirstCSharp.csprojAssemblyReference.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/obj/Debug/netcoreapp3.1/FirstCSharp.AssemblyInfoInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/obj/Debug/netcoreapp3.1/FirstCSharp.AssemblyInfo.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/obj/Debug/netcoreapp3.1/FirstCSharp.csproj.CoreCompileInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/obj/Debug/netcoreapp3.1/FirstCSharp.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/obj/Debug/netcoreapp3.1/FirstCSharp.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/FirstCSharp/obj/Debug/netcoreapp3.1/FirstCSharp.genruntimeconfig.cache
