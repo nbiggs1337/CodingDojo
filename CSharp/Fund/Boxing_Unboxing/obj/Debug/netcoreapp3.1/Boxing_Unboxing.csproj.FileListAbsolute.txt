@@ -1,0 +1,12 @@
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.deps.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.runtimeconfig.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.runtimeconfig.dev.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.csprojAssemblyReference.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.AssemblyInfoInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.AssemblyInfo.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.csproj.CoreCompileInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.genruntimeconfig.cache
