@@ -8,8 +8,8 @@ namespace Puzzles
         static void Main(string[] args)
         {
             RandArray();
-            // CoinFlip();
-            // TossMultipleCoins(3);
+            CoinFlip();
+            TossMultipleCoins(3);
             Names();
         }
         
