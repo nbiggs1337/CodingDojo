@@ -10,3 +10,15 @@
 /Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/human/obj/Debug/netcoreapp3.1/human.dll
 /Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/human/obj/Debug/netcoreapp3.1/human.pdb
 /Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/human/obj/Debug/netcoreapp3.1/human.genruntimeconfig.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/bin/Debug/netcoreapp3.1/human.deps.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/bin/Debug/netcoreapp3.1/human.runtimeconfig.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/bin/Debug/netcoreapp3.1/human.runtimeconfig.dev.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/bin/Debug/netcoreapp3.1/human.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/bin/Debug/netcoreapp3.1/human.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/obj/Debug/netcoreapp3.1/human.csprojAssemblyReference.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/obj/Debug/netcoreapp3.1/human.AssemblyInfoInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/obj/Debug/netcoreapp3.1/human.AssemblyInfo.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/obj/Debug/netcoreapp3.1/human.csproj.CoreCompileInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/obj/Debug/netcoreapp3.1/human.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/obj/Debug/netcoreapp3.1/human.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/obj/Debug/netcoreapp3.1/human.genruntimeconfig.cache

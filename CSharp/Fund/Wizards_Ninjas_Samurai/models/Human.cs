@@ -1,23 +1,24 @@
 using System;
 
-namespace human.models
+namespace Wizards_Ninjas_Samurai
 {
-    class Human
+    public class Human
 {
     // Fields for Human
     public string Name;
     public int Strength;
     public int Intelligence;
     public int Dexterity;
-    private int health;
+    protected int health;
     
-    
+    Random rand = new Random();
     // add a public "getter" property to access health
-    public int GetHealth
+    public int Health
     {
         get { return health; }
+        set { health = value; }
     }
-     
+    
     // Add a constructor that takes a value to set Name, and set the remaining fields to default values
     public Human(string name)
     {
@@ -42,10 +43,11 @@ namespace human.models
     }
      
     // Build Attack method
-    public int Attack(Human target)
+    public virtual int Attack(Human target)
     {
-        target.health = target.health-(Strength*5);
-        Console.WriteLine($"Rude. {target.Name}'s health is now {target.health}");
+        int dmg = Strength * 3;
+        target.health -= dmg;
+        Console.WriteLine($"{Name} attacked {target.Name} for {dmg} damage! {target.Name}'s health is now {target.health}");
         return target.health;
     }
 }

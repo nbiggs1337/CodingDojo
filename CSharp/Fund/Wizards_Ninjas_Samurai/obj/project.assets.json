@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/human/human.csproj",
+      "projectUniqueName": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/human.csproj",
       "projectName": "human",
-      "projectPath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/human/human.csproj",
+      "projectPath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/human.csproj",
       "packagesPath": "/Users/noahbiggs/.nuget/packages/",
-      "outputPath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/human/obj/",
+      "outputPath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Wizards_Ninjas_Samurai/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/noahbiggs/.nuget/NuGet/NuGet.Config"
