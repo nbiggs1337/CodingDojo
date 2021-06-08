@@ -1,0 +1,12 @@
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/bin/Debug/netcoreapp3.1/hungry_ninja.deps.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/bin/Debug/netcoreapp3.1/hungry_ninja.runtimeconfig.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/bin/Debug/netcoreapp3.1/hungry_ninja.runtimeconfig.dev.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/bin/Debug/netcoreapp3.1/hungry_ninja.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/bin/Debug/netcoreapp3.1/hungry_ninja.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/obj/Debug/netcoreapp3.1/hungry_ninja.csprojAssemblyReference.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/obj/Debug/netcoreapp3.1/hungry_ninja.AssemblyInfoInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/obj/Debug/netcoreapp3.1/hungry_ninja.AssemblyInfo.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/obj/Debug/netcoreapp3.1/hungry_ninja.csproj.CoreCompileInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/obj/Debug/netcoreapp3.1/hungry_ninja.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/obj/Debug/netcoreapp3.1/hungry_ninja.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/hungry_ninja/obj/Debug/netcoreapp3.1/hungry_ninja.genruntimeconfig.cache
