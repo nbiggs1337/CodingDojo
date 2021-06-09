@@ -1,5 +1,5 @@
 using System;
-namespace Phones.Models
+namespace Phones
 {
     public class Nokia : Phone, IRingable 
     {

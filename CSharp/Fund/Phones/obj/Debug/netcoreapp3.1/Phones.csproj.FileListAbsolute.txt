@@ -1,0 +1,12 @@
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/bin/Debug/netcoreapp3.1/Phones.deps.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/bin/Debug/netcoreapp3.1/Phones.runtimeconfig.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/bin/Debug/netcoreapp3.1/Phones.runtimeconfig.dev.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/bin/Debug/netcoreapp3.1/Phones.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/bin/Debug/netcoreapp3.1/Phones.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/obj/Debug/netcoreapp3.1/Phones.csprojAssemblyReference.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/obj/Debug/netcoreapp3.1/Phones.AssemblyInfoInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/obj/Debug/netcoreapp3.1/Phones.AssemblyInfo.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/obj/Debug/netcoreapp3.1/Phones.csproj.CoreCompileInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/obj/Debug/netcoreapp3.1/Phones.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/obj/Debug/netcoreapp3.1/Phones.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Phones/obj/Debug/netcoreapp3.1/Phones.genruntimeconfig.cache
