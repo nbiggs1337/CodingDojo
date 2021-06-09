@@ -3,7 +3,7 @@ namespace Phones
     public interface IRingable
     {
         
-        string Ring {get;set;}
+        string Ring();
         
         string Unlock();
         

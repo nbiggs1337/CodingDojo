@@ -17,17 +17,31 @@ namespace Phones
         public abstract void DisplayInfo();
         // public getters and setters removed for brevity. Please implement them yourself
         
-        public abstract string Ringtone {get;}
+        public string Version
+        {
+            get { return _versionNumber; }
+        }
+        
+        public int Battery
+        {
+            get { return _batteryPercentage; }
+        }
+        
+        public string Carrier
+        {
+            get { return _carrier; }
+        }
+        
+        public string Ringtone 
+        {
+            get { return _ringTone;}
+        }
+        
+        
+        
+        
         
         
     }
-        
-    
-    
-    
-    
-    
-    
-    
     
 }

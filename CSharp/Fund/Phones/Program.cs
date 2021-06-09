@@ -6,7 +6,12 @@ namespace Phones
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Galaxy S20 = new Galaxy("S20+", 98, "Verizon", "Dooo do doo dooooo");
+            Nokia fivedot3 = new Nokia("")
+            
+            
+            
+            
         }
     }
 }
