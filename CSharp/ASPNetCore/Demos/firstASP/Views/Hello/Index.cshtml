@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <h1>Hello world from your first cshtml file!</h1>
+    @{
+        List<string> myList = new List<string>{
+            "Hello",
+            "World",
+            "Pizza"
+            };
+        foreach(string word in myList)
+        {
+            <p>@word</p>
+        }
+    }
+    <h3>@ViewBag.Whatever</h3>
+    <img src="~/static/otter.jpg" alt="otter">
+</body>
+</html>
