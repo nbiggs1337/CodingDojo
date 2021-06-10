@@ -14400,6 +14400,17 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "Dojo_Survey",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ASPNetCore/Dojo_Survey/Views/Survey/Index.cshtml",
+      "TargetPath": "Views\\Survey\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ASPNetCore/Dojo_Survey/Views/Survey/Result.cshtml",
+      "TargetPath": "Views\\Survey\\Result.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

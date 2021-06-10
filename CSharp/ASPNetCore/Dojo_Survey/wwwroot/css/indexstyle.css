@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.content {
+    background-color: whitesmoke;
+    border: 2px solid black;
+    padding: 10px 30px 20px 40px;
+}
+.form {
+    display: flex;
+    justify-content: left;
+    word-wrap: break-word;
+}
+input {
+    margin: 5px;
+}
+#submit{
+    background-color: mediumturquoise;
+    color: white;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    margin-left: 65%;
+}

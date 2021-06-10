@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey - .NET Core Version</title>
+    <link rel="stylesheet" href="~/css/indexstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content"><br>
+            <div class="form">
+                        <form action='/result' method='post'>
+                        Your Name: <input type='text' name='name'> <br>
+                        
+                        Dojo Location: <input list="location" name="location">
+                            <datalist id="location">
+                                <option value="Bellevue">
+                                <option value="Boise">
+                                <option value="Chicago">
+                                <option value="Dallas">
+                                <option value="Los Angeles">
+                                <option value="San Jose">
+                            </datalist>
+                            <br>
+                        Favorite Language: <input list="language" name="language">
+                            <datalist id="language">
+                                <option value="Python">
+                                <option value="Javascript">
+                                <option value="Java">
+                                <option value="C#">
+                                <option value="C">
+                                <option value="C++">
+                                <option value="GO">
+                                <option value="R">
+                                <option value="Swift">
+                                <option value="PHP">
+                            </datalist> <br>
+                            <!-- <label for="comments">Comments:</label> -->
+                            Comments: (Optional) <br>
+                        <textarea name="comments" rows="10" cols="30"></textarea><br>
+                            <input id='submit'  type='submit' value='create user'>
+                        </form>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
