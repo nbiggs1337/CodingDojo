@@ -1,0 +1,12 @@
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/bin/Debug/netcoreapp3.1/DLL.deps.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/bin/Debug/netcoreapp3.1/DLL.runtimeconfig.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/bin/Debug/netcoreapp3.1/DLL.runtimeconfig.dev.json
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/bin/Debug/netcoreapp3.1/DLL.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/bin/Debug/netcoreapp3.1/DLL.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/obj/Debug/netcoreapp3.1/DLL.csprojAssemblyReference.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/obj/Debug/netcoreapp3.1/DLL.AssemblyInfoInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/obj/Debug/netcoreapp3.1/DLL.AssemblyInfo.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/obj/Debug/netcoreapp3.1/DLL.csproj.CoreCompileInputs.cache
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/obj/Debug/netcoreapp3.1/DLL.dll
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/obj/Debug/netcoreapp3.1/DLL.pdb
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/Fund/Data_Structures/DLL/obj/Debug/netcoreapp3.1/DLL.genruntimeconfig.cache
