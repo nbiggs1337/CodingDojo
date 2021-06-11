@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System.Diagnostics;
 using System;
 using Dojo_Survey_Model.Models;
 
@@ -21,9 +23,17 @@ namespace Dojo_Survey.Contollers
         [Route("result")]
         public IActionResult Result(Survey yourSurvey)
         {
-            Console.WriteLine(".....Submitting & Redirecting......");
+            if (ModelState.IsValid)
+            {
+                Console.WriteLine(".....Submitting & Redirecting......");
+                
+                return View("Result", yourSurvey);
+            }
+            else {
+                Console.WriteLine(".....Submit invalid...... Loading Errors......");
+                return View("Index");
+            }
             
-            return View("Result", yourSurvey);
         }
         
     }

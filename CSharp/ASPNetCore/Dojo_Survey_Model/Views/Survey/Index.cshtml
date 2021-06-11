@@ -1,47 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+@model Survey
+@{
+    ViewData["Title"] = "Dojo Survey Index";
+}
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dojo Survey - .NET Core Version</title>
     <link rel="stylesheet" href="~/css/indexstyle.css">
 </head>
 <body>
-    <div class="container">
-        <div class="content"><br>
-            <div class="form">
-                        <form action='/result' method='post'>
-                        Your Name: <input type='text' name='Name'> <br>
-                        
-                        Dojo Location: <input list="location" name="Location">
-                            <datalist id="location">
-                                <option value="Bellevue">
-                                <option value="Boise">
-                                <option value="Chicago">
-                                <option value="Dallas">
-                                <option value="Los Angeles">
-                                <option value="San Jose">
-                            </datalist>
-                            <br>
-                        Favorite Language: <input list="language" name="Language">
-                            <datalist id="language">
-                                <option value="Python">
-                                <option value="Javascript">
-                                <option value="Java">
-                                <option value="C#">
-                                <option value="C">
-                                <option value="C++">
-                                <option value="GO">
-                                <option value="R">
-                                <option value="Swift">
-                                <option value="PHP">
-                            </datalist> <br>
-                            <!-- <label for="comments">Comments:</label> -->
-                            Comments: (Optional) <br>
-                        <textarea name="Comments" rows="10" cols="30"></textarea><br>
-                            <input id='submit'  type='submit' value='create user'>
-                        </form>
+    <div id="pad"></div>
+    <div class="text-center">
+        <div class="container">
+            <div class="content"><br>
+                <div class="form">
+                            <form asp-action="Result" asp-controller="Survey" method="POST">
+                            Your Name: <input type='text' asp-for='Name'> <br>
+                            <span asp-validation-for="Name"></span><br>
+                            
+                            Dojo Location: 
+                                <select asp-for="Location" id="location">
+                                    <option value="">--</option>
+                                    <option value="Bellevue">Bellevue</option>
+                                    <option value="Boise">Boise</option>
+                                    <option value="Chicago">Chicago</option>
+                                    <option value="Dallas">Dallas</option>
+                                    <option value="Los Angeles">Los Angeles</option>
+                                    <option value="San Jose">San Jose</option>
+                                </select><br>
+                                <span asp-validation-for="Location"></span>
+                                <br>
+                            Favorite Language: 
+                                <select asp-for="Language" id="language">
+                                    <option value="">--</option>
+                                    <option value="Python">Python</option>
+                                    <option value="Javascript">Javascript</option>
+                                    <option value="Java">Java</option>
+                                    <option value="C#">C#</option>
+                                    <option value="C">C</option>
+                                    <option value="C++">C++</option>
+                                    <option value="GO">GO</option>
+                                    <option value="R">R</option>
+                                    <option value="Swift">Swift</option>
+                                    <option value="PHP">PHP</option>
+                                </select> <br>
+                                <span asp-validation-for="Language"></span><br>
+                                <!-- <label for="comments">Comments:</label> -->
+                                Comments: (Optional) <br>
+                            <textarea asp-for="Comments" rows="10" cols="30"></textarea> <br>
+                            <span asp-validation-for="Comments"></span><br>
+                                <input id='submit'  type='submit' value='create user'>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

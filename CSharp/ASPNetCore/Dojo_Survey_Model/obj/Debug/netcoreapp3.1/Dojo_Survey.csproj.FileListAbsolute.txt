@@ -60,3 +60,7 @@
 /Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ASPNetCore/Dojo_Survey_Model/obj/Debug/netcoreapp3.1/Dojo_Survey.pdb
 /Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ASPNetCore/Dojo_Survey_Model/obj/Debug/netcoreapp3.1/Dojo_Survey.genruntimeconfig.cache
 /Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ASPNetCore/Dojo_Survey_Model/obj/Debug/netcoreapp3.1/Dojo_Survey.csproj.CopyComplete
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ASPNetCore/Dojo_Survey_Model/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ASPNetCore/Dojo_Survey_Model/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ASPNetCore/Dojo_Survey_Model/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ASPNetCore/Dojo_Survey_Model/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
