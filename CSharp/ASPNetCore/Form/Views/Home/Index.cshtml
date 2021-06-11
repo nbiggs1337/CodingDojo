@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+@model User
+
+<div class="text-center">
+    <h2 class="display-4">Enter your information into this sketchy page: </h2>
+    <div>
+        <form class="form-group" asp-action="Create" asp-controller="Home" method="post">
+            <span asp-validation-for="FirstName"></span>
+            <label class="col-sm-2 col-form-label" asp-for="FirstName"></label>
+            <input class="form-control" asp-for="FirstName">    
+            <span asp-validation-for="LastName"></span>
+            <label class="col-sm-2 col-form-label" asp-for="LastName"></label>
+            <input class="form-control" asp-for="LastName"> 
+            <span asp-validation-for="Age"></span>
+            <label class="col-sm-2 col-form-label" asp-for="Age"></label>
+            <input class="form-control" asp-for="Age">
+            <span asp-validation-for="Email"></span>
+            <label class="col-sm-2 col-form-label" asp-for="Email"></label>
+            <input class="form-control" asp-for="Email">
+            <span asp-validation-for="Password"></span>
+            <label class="col-sm-2 col-form-label" asp-for="Password"></label>
+            <input class="form-control" asp-for="Password">
+            <input class="btn btn-primary mb-2" value="Add User" type="submit">    
+        </form>
+        
+    </div>
+</div>
