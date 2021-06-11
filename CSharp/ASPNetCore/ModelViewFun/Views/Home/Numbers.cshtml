@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Numbers";
+}
+@using ModelViewFun.Models
+
+@model int[];
+
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Here are some numbers!</h1>
+    <ul>
+        @foreach (var numbers in Model)
+    {
+        <li>@numbers</li>
+    }
+    </ul>
+    
+    
+</div>

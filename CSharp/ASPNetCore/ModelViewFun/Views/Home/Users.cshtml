@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Numbers";
+}
+@* @using ModelViewFun.Models *@
+
+@model List<User>
+
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Here are some Users!</h1>
+    <ul>
+        @foreach (var numbers in Model)
+    {
+        <li>@numbers.FirstName @numbers.LastName</li>
+    }
+    </ul>
+    
+    
+</div>
