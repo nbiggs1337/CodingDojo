@@ -15,22 +15,8 @@ class SinglyLinkedList {
         this.head = null;
         this.tail = null;
     }
-    // addToFront - adds a node with the given value to the head of the list
-    // addToBack(value) {
-    //     var new_node = new ListNode(value);
-
-    //     // if list is empty
-    //     if (this.head == null) {
-    //         this.head = new_node;
-    //         this.tail = new_node;
-    //     }
-
-    //     else {
-    //         this.tail.next = new_node;
-    //         this.tail = new_node;
-    //         this.tail.next = null;
-    //     }
-    // }
+    
+    ///Adds given num into back of list - basiclly pushes.
     add(num) {
         if (this.head == null) {
             this.head = new ListNode(num);
@@ -45,7 +31,7 @@ class SinglyLinkedList {
         // this.count++;
         return this;
     }
-    
+    //Runs through list and prints each nodes Value
     printList() {
         var output = "";
         var runner = this.head;
@@ -58,30 +44,82 @@ class SinglyLinkedList {
     }
     
     /// Todays Algo~~
-    // reverse(){
-    //     var prev = null;
-    //     var temp = this.head.next;
-    //     while (temp.next != null){
-    //         prev = this.head;
-    //         this.head = temp;
-    //         temp = temp.next;
-    //     }
-    //     this.head.next = prev;
-    //     return this;
-    // }
     
     reverse() {
-        if (this.head === null) {
+        if (this.head === null) { //edge case check first~~
             console.log("This is not the list you are looking for.");
             return this;
         }
+        //begining of actual reverse~
         var runner = this.head;
         var temp = null;
         while (runner.next != null) {
-            temp = runner.next;
-            runner.next = runner.next.next;
-            temp.next = this.head;
-            this.head = temp;
+            console.log("************* LOOP CYCLE START **************");
+            temp = runner.next;//line 1
+            console.log("line 1: temp = runner.next");
+            console.log("Runner: " + runner.value + "  Runner.next: "+runner.next.value);
+            if (temp.next === null){
+                console.log("Temp: " + temp.value + "   Temp.Next: null");
+            }
+            else {
+                console.log("Temp: " + temp.value + "   Temp.Next: " + temp.next.value);
+            }
+            console.log("Head: " + this.head.value + "   Head.next: " + this.head.next.value);
+            console.log("--------------------------------------------");
+            
+            runner.next = runner.next.next;//line 2
+            console.log("Line 2: runner.next = runner.next.next");
+            if (runner.next === null){
+                console.log("Runner: " + runner.value + "  Runner.next: null");
+            }
+            else { 
+                console.log("Runner: " + runner.value + "  Runner.next: "+runner.next.value);
+            }
+            
+            if (temp.next === null){
+                console.log("Temp: " + temp.value + "   Temp.Next: null");
+            }
+            else {
+                console.log("Temp: " + temp.value + "   Temp.Next: " + temp.next.value);
+            }
+            console.log("Head: " + this.head.value + "   Head.next: " + this.head.next.value);
+            console.log("--------------------------------------------");
+            
+            temp.next = this.head;//line 3
+            console.log("Line 3: temp.next = this.head");
+            if (runner.next === null){
+                console.log("Runner: " + runner.value + "  Runner.next: null")
+            }
+            else {
+                console.log("Runner: " + runner.value + "  Runner.next: "+runner.next.value);
+            }
+            
+            if (temp.next === null){
+                console.log("Temp: " + temp.value + "   Temp.Next: null");
+            }
+            else {
+                console.log("Temp: " + temp.value + "   Temp.Next: " + temp.next.value);
+            }
+            console.log("Head: " + this.head.value + "   Head.next: " + this.head.next.value);
+            console.log("--------------------------------------------");
+            
+            this.head = temp; //line 4
+            console.log("Line 4: this.head = temp");
+            if (runner.next === null){
+                console.log("Runner: " + runner.value + "  Runner.next: null");
+            }
+            else {
+                console.log("Runner: " + runner.value + "  Runner.next: "+runner.next.value);
+            }
+            
+            if (temp.next === null){
+                console.log("Temp: " + temp.value + "   Temp.Next: null");
+            }
+            else {
+                console.log("Temp: " + temp.value + "   Temp.Next: " + temp.next.value);
+            }
+            console.log("Head: " + this.head.value + "   Head.next: " + this.head.next.value);
+            console.log("************* LOOP CYCLE END **************");
         }
         return this;
     }
@@ -93,17 +131,16 @@ function generateNewList(length = 10, min_value = 0, max_value = 10) {
 
     for (var i = 0; i < length; i++) {
         var value = Math.round((Math.random() * (max_value - min_value)) + min_value);
-        console.log(value);
+        // console.log(value);
         new_sll.add(value);
     }
 
     return new_sll;
 }
 
-var list =  generateNewList(10, 0, 12);
-var list2 = new SinglyLinkedList();
-// list2.add(1).add(2).add(4);
-// list2.printList();
+var list =  generateNewList(3, 0, 12);
+
 list.printList();
 list.reverse();
 list.printList();
+
