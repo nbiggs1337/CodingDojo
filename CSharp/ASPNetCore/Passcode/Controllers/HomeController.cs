@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Passcode.Models;
+using Microsoft.AspNetCore.Http;
+
+
 
 namespace Passcode.Controllers
 {
@@ -17,15 +20,34 @@ namespace Passcode.Controllers
         {
             _logger = logger;
         }
-
+        // public static int count = 1;
+        
+        [HttpGet]
+        [Route("")]
         public IActionResult Index()
         {
+            
+            if(HttpContext.Session.GetInt32("count") == null)
+                HttpContext.Session.SetInt32("count", 1);   
+            else
+                {
+                    int? count = HttpContext.Session.GetInt32("count");
+                    count ++;
+                    HttpContext.Session.SetInt32("count", (int)count);   
+                }
+                
+            ViewBag.Count = HttpContext.Session.GetInt32("count");
+            // ViewBag.Count = count;
+            ViewBag.Passcode = new Passcodes();
             return View();
         }
-
-        public IActionResult Privacy()
+        
+        [HttpPost]
+        [Route("submit")]
+        public IActionResult Submit()
         {
-            return View();
+            // count++;
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

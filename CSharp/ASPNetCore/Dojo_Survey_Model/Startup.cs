@@ -31,8 +31,7 @@ namespace Dojo_Survey
 
             // app.UseRouting();
 
-            // app.UseEndpoints(endpoints =>
-            // {
+            // aw/ 
             //     endpoints.MapGet("/", async context =>
             //     {
             //         await context.Response.WriteAsync("Hello World!");
