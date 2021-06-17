@@ -1,0 +1,7 @@
+EF packages that must be installed with every project spinup via terminal:
+
+
+
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 3.1.1
+
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.5
