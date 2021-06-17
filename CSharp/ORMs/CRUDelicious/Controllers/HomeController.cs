@@ -90,7 +90,7 @@ namespace CRUDelicious.Controllers
             Dish DeleteDish = _context.Dishes.SingleOrDefault(d => d.DishID == DishID);
             _context.Dishes.Remove(DeleteDish);
             _context.SaveChanges();
-            return RedirectToAction("");
+            return Redirect("/");
         }
         
         

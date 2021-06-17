@@ -14,7 +14,7 @@
         <h4>Tastiness: @ViewBag.OneDish.Tastiness</h4>
         <br><br>
         
-        <a href="/delete/@ViewBag.OneDish.DishID" method="post" class="btn btn-primary mb-2">Delete</a> <div class="spacer"></div> <a href="/edit/@ViewBag.OneDish.DishID" class="btn btn-primary mb-2">Edit</a>  
-        <form action="/delete/@ViewBag.OneDish.DishID" method="post"><button type="submit">Submit</button></form>
+        <form asp-action="DeleteDish" asp-route-DishID=@ViewBag.OneDish.DishID method="post"><button type="submit" class="btn btn-primary mb-2">Delete</button></form> <div class="spacer"></div> <a href="/edit/@ViewBag.OneDish.DishID" class="btn btn-primary mb-2">Edit</a>  
+        
     </div>
 </div>
