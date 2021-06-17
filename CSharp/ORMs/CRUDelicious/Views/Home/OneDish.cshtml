@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = ViewBag.OneDish.Name + " - " + ViewBag.OneDish.Chef;
+}
+<a href="/" class="link-primary">Home</a>
+<div class="text-center">
+    <h2 class="display-4">@ViewBag.OneDish.Name</h2>
+    <h2 class="display-6">@ViewBag.OneDish.Chef</h2>
+    <div class="container">
+        <hr>
+        <h4>@ViewBag.OneDish.Description</h4>
+        <br><br>
+        
+        <h4>Calories: @ViewBag.OneDish.Calories</h4>
+        <h4>Tastiness: @ViewBag.OneDish.Tastiness</h4>
+        <br><br>
+        
+        <a href="/delete/@ViewBag.OneDish.DishID" method="post" class="btn btn-primary mb-2">Delete</a> <div class="spacer"></div> <a href="/edit/@ViewBag.OneDish.DishID" class="btn btn-primary mb-2">Edit</a>  
+        <form action="/delete/@ViewBag.OneDish.DishID" method="post"><button type="submit">Submit</button></form>
+    </div>
+</div>

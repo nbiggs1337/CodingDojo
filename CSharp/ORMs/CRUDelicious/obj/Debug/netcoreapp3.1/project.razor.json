@@ -14427,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ORMs/CRUDelicious/Views/Home/new.cshtml",
+      "TargetPath": "Views\\Home\\new.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ORMs/CRUDelicious/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -14434,6 +14439,16 @@
     {
       "FilePath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ORMs/CRUDelicious/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ORMs/CRUDelicious/Views/Home/OneDish.cshtml",
+      "TargetPath": "Views\\Home\\OneDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/noahbiggs/Documents/CodingDojo/WebFund/PushToGitHub/CSharp/ORMs/CRUDelicious/Views/Home/Edit.cshtml",
+      "TargetPath": "Views\\Home\\Edit.cshtml",
       "FileKind": "mvc"
     }
   ],

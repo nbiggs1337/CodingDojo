@@ -1,8 +1,29 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" href="~/css/Index.css">
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h2 class="display-4">Welcome To CRUDelicious</h2>
+    
+    <div class="left">
+        Check out some recent dishes!
+        <hr>
+        <table>
+            @foreach (var dish in ViewBag.AllDishes)
+            {
+                <tr>
+                    <td><a href="/dish/@dish.DishID" class="link-secondary">@dish.Name</a> by @dish.Chef</td>
+                    
+                </tr>
+            }
+        </table>
+        
+    </div>
+    <div class="right">
+        <p><a href="/new" class="link-primary">Add A Dish</a></p>
+        <hr>
+        <div></div>
+    </div>
+    
 </div>

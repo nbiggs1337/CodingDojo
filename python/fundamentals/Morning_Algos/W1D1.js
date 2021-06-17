@@ -22,3 +22,4 @@ function reverseString(input) {
 var y = "CodingDojo morning algos"
 var x = "hello world!";
 console.log(reverseString(y));
+console.log(reverseString(x));

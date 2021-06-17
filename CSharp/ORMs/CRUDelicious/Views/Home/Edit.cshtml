@@ -1,0 +1,57 @@
+﻿@model Dish
+@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/Index.css">
+
+<div class="text-center">
+    <h2 class="display-4">Edit Dish!</h2>
+    
+    <div class="container">
+        <a href="/" class="link-primary">Home</a>
+        <hr>
+        <div class="form">
+            <form asp-action="CommitUpdate" asp-route-DishID=@Model.DishID method="post" asp-controller="Home">
+                <div class="left">
+                <label asp-for="Chef" class="form-label">Chefs Name:</label>
+                <input type="text" class="form-control" asp-for="Chef">
+                <span asp-validation-for="Chef"></span>
+                
+                <label asp-for="Name" class="form-label">Name of Dish:</label>
+                <input type="text" class="form-control" asp-for="Name">
+                <span asp-validation-for="Name"></span>
+                
+                <label asp-for="Calories" class="form-label"># of Calories:</label>
+                <input type="text" class="form-control" asp-for="Calories">
+                <span asp-validation-for="Calories"></span>
+                
+                <label asp-for="Tastiness" class="form-label">Tastiness:</label><br>
+                <span asp-validation-for="Tastiness"></span>
+                <select asp-for="Tastiness" class="form-control" aria-label="Default select example">
+                    <option selected value="">Select From Menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                </select>
+                </div>
+                <div class="right">
+                    
+                    <label asp-for="Description" class="form-label">Description:</label>
+                    <textarea asp-for="Description" class="form-control" rows="10" cols="30"></textarea>
+                    <span asp-validation-for="Description"></span>
+                    <input class="btn btn-primary mb-2" value="Update Dish" type="submit">
+                </div>
+                
+                
+                </form>
+        </div>
+    </div>
+    
+    <div class="right">
+        
+        
+    </div>
+    
+</div>
