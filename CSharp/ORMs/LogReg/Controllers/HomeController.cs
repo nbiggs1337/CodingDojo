@@ -62,11 +62,13 @@ namespace LogReg.Controllers
             }
         }
         
+        
         [HttpGet("/login")]
         public IActionResult Login()
         {
             return View();
         }
+        
         
         [HttpPost("/login/user")]
         public IActionResult LoginUser(LoginUser UserSub)
@@ -77,7 +79,7 @@ namespace LogReg.Controllers
                 
                 if (UserInDB == null)
                 {
-                    ModelState.AddModelError("Email", "Invalid Email/Password");
+                    ModelState.AddModelError("LoginEmail", "Invalid Email/Password");
                     return View("Login");
                 }
                 var hasher = new PasswordHasher<LoginUser>();
@@ -85,7 +87,7 @@ namespace LogReg.Controllers
                 
                 if (result == 0)
                 {
-                    ModelState.AddModelError("Email", "Invalid Email/Password");
+                    ModelState.AddModelError("LoginEmail", "Invalid Email/Password");
                     return View("Login");
                 }
                 else {
@@ -98,6 +100,7 @@ namespace LogReg.Controllers
             }
         }
         
+        
         [HttpGet("Success")]
         public IActionResult Success()
         {
@@ -107,6 +110,7 @@ namespace LogReg.Controllers
             }
             return RedirectToAction("Login");
         }
+        
         
         [HttpGet("logout")]
         public IActionResult Logout()
