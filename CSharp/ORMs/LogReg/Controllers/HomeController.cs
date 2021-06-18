@@ -21,11 +21,11 @@ namespace LogReg.Controllers
             _context = context;
         }
         
-        public User LoggedID()
+        public User LoggedID()//Returns User model if valid - else null
         {
-            int? LoggedID = HttpContext.Session.GetInt32("LoggedIn");
-            User Logged = _context.Users.FirstOrDefault(u => u.UserID == LoggedID);
-            return Logged;
+            int? LoggedID = HttpContext.Session.GetInt32("LoggedIn");//Setting LoggedID as userID
+            User Logged = _context.Users.FirstOrDefault(u => u.UserID == LoggedID); //querying DB for user w/ matching ID
+            return Logged; //Returning logged == logged user. 
         }
         
         
