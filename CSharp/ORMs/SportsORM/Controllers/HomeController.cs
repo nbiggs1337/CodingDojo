@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SportsORM.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace SportsORM.Controllers
@@ -70,6 +71,32 @@ namespace SportsORM.Controllers
         [HttpGet("level_2")]
         public IActionResult Level2()
         {
+            List<Team> AtlanticTeams = _context.Teams.Include(t => t.CurrLeague).Where(l => l.CurrLeague.Name.Contains("Atlantic Soccer Conference")).ToList();
+            ViewBag.TeamsAtlantic = AtlanticTeams;
+            
+            
+            List<Player> BostPengs = _context.Players.Include(p => p.CurrentTeam).Where(p => p.CurrentTeam.TeamName.Contains("Penguins") && p.CurrentTeam.Location.Contains("Boston")).ToList();
+            ViewBag.BostPengs = BostPengs;
+            
+            List<Player> IntCBC = _context.Players.Include(p => p.CurrentTeam).Where(p => p.CurrentTeam.CurrLeague.Name.Contains("International Collegiate Baseball Conference")).ToList();
+            ViewBag.IntCBC = IntCBC;
+            
+            List<Player> LopezACA = _context.Players.Include(p => p.CurrentTeam).Where(p => p.CurrentTeam.CurrLeague.Name.Contains("American Conference of Amateur Football") && p.LastName.Contains("Lopez")).ToList();
+            ViewBag.LopezACA = LopezACA;
+            
+            List<Player> AllPlay = _context.Players.Include(p => p.CurrentTeam).Where(p => p.CurrentTeam.CurrLeague.Sport.Contains("Football")).ToList();
+            ViewBag.AllPlay = AllPlay;
+            
+            List<Player> Teamz = _context.Players.Include( p => p.CurrentTeam).Where(p => p.FirstName == "Sophia").ToList();
+            ViewBag.Sophia = Teamz;
+            
+            List<Player> SophLeauges = _context.Players.Include(p => p.CurrentTeam.CurrLeague).Where(p => p.FirstName == "Sophia").ToList();
+            ViewBag.SophLeauges = SophLeauges;
+            
+            List<Player> NotFlores = _context.Players.Include(p => p.CurrentTeam).Where(p => p.LastName == "Flores" && p.CurrentTeam.TeamName != "Washington Roughriders").ToList();
+            ViewBag.NotFlores = NotFlores;
+            
+            
             return View();
         }
 

@@ -4,13 +4,143 @@
         <p>Using the SportsORM, complete all the following queries and show their results on Level2.cshtml.</p>
         <ol>
             <li>...all teams in the Atlantic Soccer Conference</li>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Team Name</th>
+                        <th>League</th>
+                        <th>Location</th>
+                    </tr>
+                    @foreach(var l in ViewBag.TeamsAtlantic)
+                    {
+                        <tr>
+                            <td>@l.TeamName</td>
+                            <td>@l.CurrLeague.Name</td>
+                            <td>@l.Location</td>
+                        </tr>
+                    }
+                </table>
+            
             <li>...all (current) players on the Boston Penguins (Hint: Boston is the Location, Penguins is the TeamName)</li>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Location</th>
+                    </tr>
+                    @foreach(var l in ViewBag.BostPengs)
+                    {
+                        <tr>
+                            <td>@l.FirstName @l.LastName</td>
+                            <td>@l.CurrentTeam.TeamName</td>
+                            <td>@l.CurrentTeam.Location</td>
+                        </tr>
+                    }
+                </table>
+            
             <li>...all (current) players in the International Collegiate Baseball Conference</li>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>League</th>
+                    </tr>
+                    @foreach(var l in ViewBag.IntCBC)
+                    {
+                        <tr>
+                            <td>@l.FirstName @l.LastName</td>
+                            <td>@l.CurrentTeam.TeamName</td>
+                            <td>International Collegiate Baseball Conference</td>
+                        </tr>
+                    }
+                </table>
+            
             <li>...all (current) players in the American Conference of Amateur Football with last name "Lopez"</li>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Location</th>
+                    </tr>
+                    @foreach(var l in ViewBag.LopezACA)
+                    {
+                        <tr>
+                            <td>@l.FirstName @l.LastName</td>
+                            <td>@l.CurrentTeam.TeamName</td>
+                            <td>@l.CurrentTeam.Location</td>
+                        </tr>
+                    }
+                </table>
+            
             <li>...all football players</li>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Location</th>
+                    </tr>
+                    @foreach(var l in ViewBag.AllPlay)
+                    {
+                        <tr>
+                            <td>@l.FirstName @l.LastName</td>
+                            <td>@l.CurrentTeam.TeamName</td>
+                            <td>@l.CurrentTeam.Location</td>
+                        </tr>
+                    }
+                </table>
+            
             <li>...all teams with a (current) player named "Sophia"</li>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Team</th>
+                        <th>Location</th>
+                    </tr>
+                    @foreach(var l in ViewBag.Sophia)
+                    {
+                        <tr>
+                            <td>@l.FirstName @l.LastName</td>
+                            <td>@l.CurrentTeam.TeamName</td>
+                            <td>@l.CurrentTeam.Location</td>
+                        </tr>
+                    }
+                </table>
+            
+            
             <li>...all leagues with a (current) player named "Sophia"</li>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Player Name</th>
+                        <th>League</th>
+                        <th>Team</th>
+                    </tr>
+                    @foreach(var l in ViewBag.SophLeauges)
+                    {
+                        <tr>
+                            <td>@l.FirstName @l.LastName</td>
+                            <td>@l.CurrentTeam.CurrLeague.Name</td>
+                            <td>@l.CurrentTeam.TeamName</td>
+                        </tr>
+                    }
+                </table>
+            
             <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders</li>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Location</th>
+                        <th>Team</th>
+                    </tr>
+                    @foreach(var l in ViewBag.NotFlores)
+                    {
+                        <tr>
+                            <td>@l.FirstName @l.LastName</td>
+                            <td>@l.CurrentTeam.Location</td>
+                            <td>@l.CurrentTeam.TeamName</td>
+                        </tr>
+                    }
+                </table>
+            
+            
         </ol>
     </div>
 </div>
