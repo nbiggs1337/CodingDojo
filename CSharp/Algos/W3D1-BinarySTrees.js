@@ -3,7 +3,7 @@
 //Binary Search Trees
 
 
-class node {
+class Node {
     constructor(value){
         this.value = value;
         this.left = null;
@@ -62,7 +62,6 @@ class BST {
                 }
             }
         }
-        
     }
     
     
