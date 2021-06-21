@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Chefs - Chefs & Dishes";
+}
+<link rel="stylesheet" href="~/css/Index.css">
+<br>
+
+<div class="text-center">
+    
+    <div class="text-center" style="display: inline-flex;">
+        <h2><a href="/">Chefs</a></h2><h2 class="padding">  |  </h2><h2><a href="/dishes">Dishes</a></h2>
+    </div>
+    
+    <div class="add">
+        <a href="/new" id="add">Add a Chef</a>
+    </div>
+    
+    <h2>Check out our roster of Chefs!</h2>
+    <hr>
+    <table class="table table-hover">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col"># of Dishes</th>
+        </tr>
+        @foreach (Chef c in ViewBag.Chefs)
+        {
+            <tr>
+                <td>@c.FirstName @c.LastName</td>
+                <td>@(DateTime.Now.Year - c.DateOfBirth.Year)</td>
+                
+                @if (c.CreatedDishes != null){
+                    <td>@c.CreatedDishes.Count</td>
+                }
+                else{<td>0</td> } 
+            </tr>
+            
+        }
+        
+    </table>
+</div>

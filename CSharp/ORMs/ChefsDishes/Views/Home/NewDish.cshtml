@@ -1,0 +1,60 @@
+@{
+    ViewData["Title"] = "Add a Chef - Chefs & Dishes";
+}
+@model Dish;
+<link rel="stylesheet" href="~/css/Index.css">
+<br>
+
+<div class="text-center">
+    
+    <div class="add">
+        <a href="/" id="add">Home</a>
+    </div>
+    
+    <h2>Add a Dish!</h2>
+    <hr>
+    <form action="/adddish" method="post">
+        <label asp-for="Name" class="form-label">Dish Name:</label>
+        <input type="text" class="form-control" asp-for="Name">
+        <span asp-validation-for="Name"></span>
+        
+        <label asp-for="Calories" class="form-label"># of Calories:</label>
+        <input type="text" class="form-control" asp-for="Calories">
+        <span asp-validation-for="Calories"></span>
+        
+        <label asp-for="Description" class="form-label">Description:</label>
+        <textarea asp-for="Description" class="form-control" rows="10" cols="30"></textarea>
+        <span asp-validation-for="Description"></span>
+        
+        <label asp-for="Tastiness" class="form-label">Tastiness:</label><br>
+        <span asp-validation-for="Tastiness"></span>
+        <select asp-for="Tastiness" class="form-control" aria-label="Default select example">
+            <option selected value="">Select From Menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+        </select>
+        
+        <label asp-for="ChefID" class="form-label">Chef:</label><br>
+        <span asp-validation-for="ChefID"></span>
+        <select asp-for="ChefID" class="form-control" aria-label="Default select example">
+            <option selected value="">Select From Menu</option>
+            @foreach (Chef c in ViewBag.Chefs)
+            {
+                <option value="@c.ChefID">@c.FirstName @c.LastName</option>
+            }
+            
+            
+        </select>
+        
+        <br>
+        <input class="btn btn-primary mb-2" value="Add Chef" type="submit">
+    
+    
+    </form>
+    
+    
+    
+</div>

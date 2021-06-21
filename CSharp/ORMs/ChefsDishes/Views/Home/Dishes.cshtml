@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Dishes - Chefs & Dishes";
+}
+<link rel="stylesheet" href="~/css/Index.css">
+<br>
+
+<div class="text-center">
+    
+    <div class="text-center" style="display: inline-flex;">
+        <h2><a href="/">Chefs</a></h2><h2 class="padding">  |  </h2><h2><a href="/dishes">Dishes</a></h2>
+    </div>
+    
+    <div class="add">
+        <a href="/newdish" id="add">Add a Dish</a>
+    </div>
+    
+    <h2>Yum, take a look at our tasty dishes!</h2>
+    <hr>
+    <table class="table table-hover">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Chef</th>
+            <th scope="col">Tastiness</th>
+            <th scope="col">Calories</th>
+        </tr>
+        @foreach (Dish d in ViewBag.Dishes)
+        {
+            <tr>
+                <td>@d.Name</td>
+                <td>@d.Chef.FirstName @d.Chef.LastName</td>
+                <td>@d.Tastiness</td>
+                <td>@d.Calories</td>
+            </tr>
+            
+        }
+        
+    </table>
+</div>
