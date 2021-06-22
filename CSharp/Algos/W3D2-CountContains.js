@@ -80,6 +80,9 @@ class BST {
             }
         }
     }
+    
+    
+    ///Use for height function in future.
     // count() {
     //     function helper(root){
     //         if (root === null) return 0
