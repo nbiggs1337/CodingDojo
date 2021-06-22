@@ -103,6 +103,29 @@ namespace SportsORM.Controllers
         [HttpGet("level_3")]
         public IActionResult Level3()
         {
+            
+            ViewBag.Evans = _context.Players
+            .Include(t => t.AllTeams)
+            .ThenInclude(p => p.TeamOfPlayer )
+            .Include(p => p.CurrentTeam)
+            .FirstOrDefault(p => p.FirstName == "Samuel" && p.LastName == "Evans");
+
+            ViewBag.Tigercats = _context.Teams
+            .Include(t => t.AllPlayers)
+            .ThenInclude(p => p.PlayerOnTeam)
+            .Include(t => t.CurrentPlayers)
+            .FirstOrDefault(t => t.TeamName == "Tiger-Cats" && t.Location == "Manitoba");
+
+
+            ViewBag.Wichita = _context.Teams
+            .Include(t => t.AllPlayers)
+            .ThenInclude(pt => pt.PlayerOnTeam)
+            .Where(t => t.AllPlayers.Any(pt => pt.PlayerOnTeam.CurrentTeam.TeamName != "Vikings"))
+            .FirstOrDefault(t => t.TeamName == "Vikings" && t.Location == "Wichita")
+            .AllPlayers.ToList();
+
+            ViewBag.Grey = _context.Players 
+            .Include(p =
             return View();
         }
 
