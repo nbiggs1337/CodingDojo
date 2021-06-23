@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Dashboard - Wedding Planner";
+}
+@model Wedding;
+<br>
+<a href="/dashboard">Dashboard</a><span> | </span><a href="/logout">Logout</a>
+<br>
+<h1 class="display-4">Plan your Wedding</h1>
+<hr>
+<div class="d-flex">
+    <div class="col-5">
+        
+
+        <form action="/newwedding" method="POST">
+            <label asp-for="WedderOne" class="form-label">Wedder One:</label>
+            <input type="text" class="form-control" asp-for="WedderOne">
+            <span asp-validation-for="WedderOne"></span>
+
+            <label asp-for="WedderTwo" class="form-label">Wedder Two:</label>
+            <input type="text" class="form-control" asp-for="WedderTwo">
+            <span asp-validation-for="WedderTwo"></span>
+
+            <label asp-for="Date" class="form-label">Date:</label>
+            <input type="date" class="form-control" asp-for="Date">
+            <span asp-validation-for="Date"></span><br>
+
+            <label asp-for="Address" class="form-label">Venue Address:</label>
+            <input type="text" class="form-control" asp-for="Address">
+            <span asp-validation-for="Address"></span>
+
+            <input type="hidden" asp-for="UserID" value="@ViewBag.UserID">
+            <br>
+            <input class="btn btn-primary mb-2" value="Add Wedding" type="submit">
+        </form>
+    </div>
+
+</div>

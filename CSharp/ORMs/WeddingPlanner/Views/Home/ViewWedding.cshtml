@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Dashboard - Wedding Planner";
+}
+@model Wedding;
+<br>
+<a href="/dashboard">Dashboard</a><span> | </span><a href="/logout">Logout</a>
+<br>
+<h1 class="display-4">@ViewBag.OneWedding.WedderOne & @ViewBag.OneWedding.WedderTwo</h1>
+<hr>
+<div class="d-flex">
+    <div class="col-5">
+        <h2>Date: @ViewBag.OneWedding.Date.ToString("MMMM dd yyyy")</h2>
+        <br>
+        <h3>RSVP'd Guests:</h3>
+        <ul>
+            @foreach (var u in ViewBag.OneWedding.Guests)
+            {
+                <li>@u.User.FirstName @u.User.LastName</li>
+            }
+            
+        </ul>
+        
+        
+    </div>
+
+</div>

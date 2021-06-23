@@ -1,0 +1,18 @@
+@model LUser
+
+    <form action="/login/user" method="POST">
+        <div class="form-group">
+            <label asp-for="LoginEmail">Email Address</label>
+            <span asp-validation-for="LoginEmail"></span>
+            <input type="email" asp-for="LoginEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll def probably never share your email with anyone else maybe.*</small>
+            
+        </div>
+        <div class="form-group">
+            <label asp-for="LoginPassword">Password</label>
+            <span asp-validation-for="LoginPassword"></span>
+            <input asp-for="LoginPassword" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Login Now</button>
+    </form>
