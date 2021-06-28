@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WeddingPlanner.Models
 {
-    public class WedDate : ValidationAttribute
+    public class FutureDate : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
