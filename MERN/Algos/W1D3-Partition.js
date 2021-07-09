@@ -35,6 +35,19 @@ const partition = (arr, pivot) => {
     return arr;
 }
 
-console.log(partition([7,9,1,6,2,10,8,4,3], 3));
+const quicksort = (arr) => {
+    for ( let a = 0; a < arr.length; a++){
+        // if ( arr[a] > arr[a+1] ) {
+        //     partition(arr, a)
+        // }
+        partition(arr, a)
+    }
+    return arr;
+}
+
+// console.log(partition([7,9,1,6,2,10,8,4,3], 2));
 
 // console.log(partition([7,12,5,9,1,3,10,4], 3));
+
+console.log(quicksort([7,9,1,6,2,10,8,4,3]));
+console.log(quicksort([7,98,1,14,6,5,8,25,3,120,15,-12,18,4,22,9,14,56,3])); 
