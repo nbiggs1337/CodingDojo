@@ -4,6 +4,8 @@
 // point (does not fully sort the array, only sorts the numbers relative to the pivot)
 
 
+/// This solution seems extra. See yesterdays for a more simple solution that also works.
+
 function partArr(arr) {
     let i = -1;
     let j = 0;
