@@ -11,7 +11,11 @@ const Form = props => {
             width: `${box.hw}px`
         } 
         setColors([...colors, boxStyle ]) //spreading colors EXISTING values, adding state object BOX to colors state (from line 28)
-        setBox("") //reseting box to "" blank
+        setBox({...box, ////reseting box to "" blank - ...Opening box - 
+            color: "", //finding keys that match - setting to these value
+            hw: ""
+            
+        }) 
         
     }
     const handleChange = e => { // change handler is needed bc updating multiple values in object rather than setting one basic datatype value in state 
