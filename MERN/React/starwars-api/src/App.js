@@ -1,13 +1,13 @@
 import Search from './components/Search';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Router ,navigate} from '@reach/router';
 import './App.css';
-import axios from 'axios';
+
 
 function App() {
   const [category, setCategory] = useState("people")
   const[id,setId] = useState(1)
-  const [data, setData] = useState([]);
+  
   
   
   const submitHandler = e => {
@@ -15,12 +15,7 @@ function App() {
     navigate(`/${category}/${id}`) 
   }
   
-  useEffect(() => {
-    axios.get(`https://swapi.dev/api/${category}/${id}`)
-        .then(res => {setData(res.data)})
-        // .then(res => setData(res.data))
-  },[id, category]);
-  
+
   
   return (
     <div className="App">
@@ -42,7 +37,7 @@ function App() {
             </div>
       
       <Router>
-        <Search path=":category/:id" data={data} category={category} />
+        <Search path=":category/:id" />
       </Router>
       
       
