@@ -8,14 +8,10 @@ function App() {
   const [category, setCategory] = useState("people")
   const[id,setId] = useState(1)
   
-  
-  
   const submitHandler = e => {
     e.preventDefault();
     navigate(`/${category}/${id}`) 
   }
-  
-
   
   return (
     <div className="App">

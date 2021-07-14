@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-
-
 const Search = props => {
     const { id, category } = props;
     const [data, setData] = useState([]);
