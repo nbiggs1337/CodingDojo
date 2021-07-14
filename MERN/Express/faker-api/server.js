@@ -7,7 +7,7 @@ app.use( express.urlencoded({ extended: true }) );
 
 class User {
     constructor() {
-        this.id = faker.datatype.number();
+        this.id = faker.datatype.uuid();
         this.firstName = faker.name.firstName();
         this.lastName = faker.name.lastName();
         this.phoneNumber = faker.phone.phoneNumber();
@@ -18,7 +18,7 @@ class User {
 
 class Company {
     constructor() {
-        this.id = faker.datatype.number();
+        this.id = faker.datatype.uuid();
         this.name = faker.company.companyName();
         this.address = {
             street: faker.address.streetAddress(),
