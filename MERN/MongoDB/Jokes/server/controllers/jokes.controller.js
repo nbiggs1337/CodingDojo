@@ -19,13 +19,13 @@ module.exports.createJoke = (req, res) => {
 };
 
 module.exports.updateJoke = (req, res) => {
-    Jokes.findAndUpdate({ _id: req.params.id }, req.body, { new: true })
+    Jokes.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
         .then(updatedJoke => res.json({ jokes: updatedJoke }))
         .catch( err => res.json({ message: "Something went wrong...", error: err }))
 };
 
 module.exports.deleteJoke = (req, res) => {
-    Jokes.deleteAJoke({ _id: req.params.id })
+    Jokes.deleteOne({ _id: req.params.id })
         .then(result => res.json({ result: result }) )
         .catch(err => res.json({ message: "Something went wrong...", error: err }))
 };
