@@ -28,7 +28,7 @@ const encode = (str) => {
 
 const decode = (str) => {
     let decoded = '';
-    for ( let i = 0; i < str.length; i++) {
+    for ( let i = 0; i < str.length; i++ ) {
         if ( isNaN(str[i])  ) {
             if ( !isNaN(str[i+2]) ) {
                 if ( !isNaN(str[i+3]) ){
@@ -66,4 +66,4 @@ console.log(encode("bb"));
 // console.log(decode("t2h10j4"));
 console.log(decode("g140f12"));
 
-// console.log(encode(decode("g140f12")));
+console.log(encode('ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggffffffffffff'));
