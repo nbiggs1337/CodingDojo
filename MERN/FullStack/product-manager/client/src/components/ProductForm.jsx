@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const ProductForm = () => {
+const ProductForm = props => {
+    const {loaded, setLoaded} = props;
     const [title, setTitle] = useState("");
     const [price, setPrice] = useState(0.0);
     const [description, setDescription] = useState("");
@@ -13,7 +14,11 @@ const ProductForm = () => {
             price,
             description
         })
-            .then(res => console.log(res))
+            .then(res => {
+                setLoaded(!loaded)
+                console.log(res)
+            })
+            
             .catch(err => console.log(err));
         
         setTitle("");
