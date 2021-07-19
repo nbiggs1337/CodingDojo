@@ -6,6 +6,7 @@ import ProductForm from '../components/ProductForm';
 const Main = (props) => {
     const [products, setProducts] = useState(null);
     const [loaded, setLoaded ] = useState(true);
+    const [reload, setReload] = useState(0)
     
     useEffect(() => {
         axios.get("http://localhost:8000/api/products")
@@ -14,7 +15,13 @@ const Main = (props) => {
                 setLoaded(true)
             })
                 .catch(err => console.log(err))
-    }, [loaded])
+    }, [loaded, reload])
+    
+    const clickHandler = (productid) => {
+        axios.delete(`http://localhost:8000/api/products/delete/${productid}`)
+        .then(res =>console.log(res))
+        setReload(reload+1);
+    }
     
     return(
         <div>
@@ -24,7 +31,7 @@ const Main = (props) => {
                 {
                     loaded ?
                     products ? products.map((product, i ) => {
-                        return <li key={i}> <Link to={'/'+ product._id} >{product.title}</Link></li>
+                        return <li key={i}> <Link to={'/'+ product._id} ><h3>{product.title}</h3></Link> <button onClick={ (e) => { clickHandler(product._id) } }>Delete</button></li>
                     })
                     : "" : null
                     
