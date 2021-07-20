@@ -17,7 +17,7 @@ module.exports = {
             .catch(err => res.json({ message: 'Something went wrong... ', error: err }));
     },
     update: (req, res) => {
-        Authors.findOneAndUpdate({ _id: req.params._id }, req.body, { new: true })
+        Authors.findOneAndUpdate({ _id: req.params._id }, req.body, { new: true, runValidators: true })
             .then(data => res.json({results: data}))
             .catch(err => res.json({ message: 'Something went wrong... ', error: err }));
     },
