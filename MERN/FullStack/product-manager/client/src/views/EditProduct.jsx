@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link, navigate, Redirect } from '@reach/router';
+import { Link, navigate } from '@reach/router';
 
 
 const EditProduct = props => {
@@ -35,7 +35,7 @@ const EditProduct = props => {
         setTitle("");
         setPrice(0.0);
         setDescription("");
-        navigate("/")
+        navigate("/");
     }
     
     return(
